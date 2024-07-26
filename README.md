@@ -1,2 +1,2 @@
 # IIoT
-IIoT ontology for Internet of Things systems
+IIoT ontology for Industrial Internet of Things systems
