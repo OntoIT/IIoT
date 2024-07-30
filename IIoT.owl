@@ -50,11 +50,11 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-        <Literal xml:lang="en">2022-08-27</Literal>
+        <Literal xml:lang="en">2023-08-27</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal xml:lang="en">2023-03-18</Literal>
+        <Literal xml:lang="en">2024-07-29</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
@@ -86,9 +86,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="Vocabulary"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AdaFruit"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Adapter"/>
@@ -995,10 +992,6 @@
         <Class IRI="#Device"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#AdaFruit"/>
-        <Class IRI="#MQTT_streams"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Adapter"/>
         <Class IRI="#Gateway"/>
     </SubClassOf>
@@ -1124,7 +1117,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Distributed_operating_system"/>
-        <Class IRI="#Support"/>
+        <Class IRI="#Distributed_system"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Distributed_processing"/>
@@ -1153,6 +1146,14 @@
     <SubClassOf>
         <Class IRI="#Edge_application"/>
         <Class IRI="#Application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edge_application"/>
+        <Class IRI="#Cloud_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edge_application"/>
+        <Class IRI="#Technology"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Edge_security"/>
@@ -1224,7 +1225,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hub"/>
-        <Class IRI="#Control_engineering"/>
+        <Class IRI="#Computer_architecture"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ICS"/>
@@ -1305,6 +1306,10 @@
     <SubClassOf>
         <Class IRI="#Management"/>
         <Class IRI="#Capabilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MapR"/>
+        <Class IRI="#BigData"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MapR"/>
@@ -1428,7 +1433,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Router"/>
-        <Class IRI="#Control_engineering"/>
+        <Class IRI="#Computer_architecture"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SAMPL"/>
@@ -3131,11 +3136,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#AdaFruit</IRI>
-        <Literal>Adafruit is a development board designed for Arduino, Raspberry Pi applications.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Adapter</IRI>
         <Literal>Adapters are gateways to external hardware platforms like Arduino and Raspberry PI.</Literal>
     </AnnotationAssertion>
@@ -3793,7 +3793,7 @@ The data stream from IoT systems is processed using cloud computing, big data, a
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Network</IRI>
-        <Literal>&quot;Network&quot; represents a layer of the IoT architecture. The networking layer concerns data transmission among devices, the types of communications, and some network protocols used in IoT.</Literal>
+        <Literal>The networking layer concerns data transmission among devices, the types of communications, and some network protocols used in IoT.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3943,7 +3943,7 @@ The data stream from IoT systems is processed using cloud computing, big data, a
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Protocol</IRI>
-        <Literal>A network protocol is a communication protocol implemented on a computer network or telecommunications network. Network protocols form protocol layers corresponding to OSI levels.</Literal>
+        <Literal>A network protocol is a communication protocol implemented on a computer network or telecommunications network. Network protocols form protocol layers according to OSI levels.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
