@@ -1663,16 +1663,6 @@
         <Class IRI="#Security"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Hardware_Platform"/>
-        <Class IRI="#Logic"/>
-        <Class IRI="#Purpose-built_Device"/>
-        <Class IRI="#Smart_Product"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Logic"/>
-        <Class IRI="#Smart_Product"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#Mahout"/>
         <Class IRI="#Mllib"/>
         <Class IRI="#Spark"/>
