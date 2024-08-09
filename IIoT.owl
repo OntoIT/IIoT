@@ -1,21 +1,18 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/IIoT/"
+     xml:base="https://w3id.org/IIoT/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/IIoT/"
+     ontologyIRI="https://w3id.org/IIoT/"
      versionIRI="IIoT:1.1.">
-    <Prefix name="" IRI="http://www.semanticweb.org/IIoT/"/>
+    <Prefix name="" IRI="https://w3id.org/IIoT/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
-    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
-    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
     <Annotation>
         <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
         <IRI>http://creativecommons.org/licenses/by/2.0/</IRI>
@@ -58,7 +55,11 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-        <Literal xml:lang="en">Ontology for Internet of Things Technologies, Tools, and Applications</Literal>
+        <Literal xml:lang="en">Ontology for Industrial Internet of Things systems</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">Version 1.1</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="preferredNamespacePrefix"/>
@@ -68,15 +69,29 @@
         <AnnotationProperty IRI="preferredNamespaceUri"/>
         <IRI>https://w3id.org/iiot-#</IRI>
     </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal xml:lang="en">Version 1.3</Literal>
-    </Annotation>
     <Declaration>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://saref.etsi.org/core/Currency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://saref.etsi.org/core/EnergyUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://saref.etsi.org/core/IlluminanceUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://saref.etsi.org/core/PowerUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://saref.etsi.org/core/PressureUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://saref.etsi.org/core/TemperatureUnit"/>
     </Declaration>
     <Declaration>
         <Class IRI="Blockchain_app"/>
@@ -112,28 +127,10 @@
         <Class IRI="#BLE"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BigData"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BigData_capability"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Blockchain"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Blockchain_problem"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Blockchain_security"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Blockchain_solution"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#C"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Capabilities"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Cloud_service"/>
@@ -157,9 +154,6 @@
         <Class IRI="#Control_System"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Control_engineering"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Cryptographic_system"/>
     </Declaration>
     <Declaration>
@@ -170,9 +164,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Data_center"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Data_transmission"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Deep_learning"/>
@@ -190,12 +181,6 @@
         <Class IRI="#Distributed_operating_system"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Distributed_processing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Distributed_storage"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Distributed_system"/>
     </Declaration>
     <Declaration>
@@ -208,19 +193,10 @@
         <Class IRI="#Eddystone"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Edge_application"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Edge_security"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Edge_technology"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Electrical_Grids"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ethics"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Factory_Equipment"/>
@@ -239,9 +215,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Gateway"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Grid"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HAT"/>
@@ -322,12 +295,6 @@
         <Class IRI="#Mahout"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Management"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MapR"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Mesos"/>
     </Declaration>
     <Declaration>
@@ -385,12 +352,6 @@
         <Class IRI="#Passive_things"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Peer-to-peer_system"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Privacy"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Processing_Board"/>
     </Declaration>
     <Declaration>
@@ -445,16 +406,10 @@
         <Class IRI="#SCADA_today_protocol"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SOA"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#SaaS"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Satellite"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Security"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sensor_Actuator"/>
@@ -505,9 +460,6 @@
         <Class IRI="#Web_Technology"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Web_socket"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Wireless_sensor_network"/>
     </Declaration>
     <Declaration>
@@ -524,24 +476,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#iBeacon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://saref.etsi.org/core/Currency"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://saref.etsi.org/core/EnergyUnit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://saref.etsi.org/core/IlluminanceUnit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://saref.etsi.org/core/PowerUnit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://saref.etsi.org/core/PressureUnit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://saref.etsi.org/core/TemperatureUnit"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Dealing_with_sensitive_data"/>
@@ -967,9 +901,6 @@
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty IRI="preferredNamespacePrefix"/>
     </Declaration>
     <Declaration>
@@ -982,6 +913,30 @@
     <SubClassOf>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
         <Class IRI="#Sensor_Actuator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://saref.etsi.org/core/Currency"/>
+        <Class IRI="UnitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://saref.etsi.org/core/EnergyUnit"/>
+        <Class IRI="UnitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://saref.etsi.org/core/IlluminanceUnit"/>
+        <Class IRI="UnitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://saref.etsi.org/core/PowerUnit"/>
+        <Class IRI="UnitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://saref.etsi.org/core/PressureUnit"/>
+        <Class IRI="UnitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://saref.etsi.org/core/TemperatureUnit"/>
+        <Class IRI="UnitOfMeasure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Blockchain_app"/>
@@ -1020,32 +975,8 @@
         <Class IRI="#Protocol"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BigData"/>
-        <Class IRI="#Application"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BigData"/>
-        <Class IRI="#Technology"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BigData_capability"/>
-        <Class IRI="#BigData"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Blockchain"/>
         <Class IRI="#Technology"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Blockchain_problem"/>
-        <Class IRI="#Blockchain"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Blockchain_security"/>
-        <Class IRI="#Blockchain"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Blockchain_solution"/>
-        <Class IRI="#Blockchain"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#C"/>
@@ -1053,11 +984,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cloud_service"/>
-        <Class IRI="#Support"/>
+        <Class IRI="#Cloud_system"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cloud_system"/>
-        <Class IRI="#Support"/>
+        <Class IRI="#Distributed_system"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cloudera"/>
@@ -1065,7 +996,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cloudlet"/>
-        <Class IRI="#Support"/>
+        <Class IRI="#Cloud_system"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Computer_architecture"/>
@@ -1078,10 +1009,6 @@
     <SubClassOf>
         <Class IRI="#Control_System"/>
         <Class IRI="#Purpose-built_Device"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Control_engineering"/>
-        <Class IRI="#Network"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cryptographic_system"/>
@@ -1097,11 +1024,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Data_center"/>
-        <Class IRI="#Support"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Data_transmission"/>
-        <Class IRI="#Network"/>
+        <Class IRI="#Cloud_system"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Deep_learning"/>
@@ -1120,14 +1043,6 @@
         <Class IRI="#Distributed_system"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Distributed_processing"/>
-        <Class IRI="#BigData_capability"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Distributed_storage"/>
-        <Class IRI="#BigData_capability"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Distributed_system"/>
         <Class IRI="#Support"/>
     </SubClassOf>
@@ -1144,32 +1059,12 @@
         <Class IRI="#Smart_Product"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Edge_application"/>
-        <Class IRI="#Application"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Edge_application"/>
-        <Class IRI="#Cloud_system"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Edge_application"/>
-        <Class IRI="#Technology"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Edge_security"/>
-        <Class IRI="#Edge_technology"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Edge_technology"/>
         <Class IRI="#Technology"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Electrical_Grids"/>
         <Class IRI="#Purpose-built_Device"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ethics"/>
-        <Class IRI="#Capabilities"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Factory_Equipment"/>
@@ -1193,11 +1088,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Gateway"/>
-        <Class IRI="#Device"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Grid"/>
-        <Class IRI="#Support"/>
+        <Class IRI="#Hardware_Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HAT"/>
@@ -1265,7 +1156,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Kafka"/>
-        <Class IRI="#Distributed_system"/>
+        <Class IRI="#Tool"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LoRa"/>
@@ -1302,18 +1193,6 @@
     <SubClassOf>
         <Class IRI="#Mahout"/>
         <Class IRI="#Machine_Learning"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Management"/>
-        <Class IRI="#Capabilities"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MapR"/>
-        <Class IRI="#BigData"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MapR"/>
-        <Class IRI="#Tool"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Mesos"/>
@@ -1386,14 +1265,6 @@
     <SubClassOf>
         <Class IRI="#Passive_things"/>
         <Class IRI="#Smart_Product"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Peer-to-peer_system"/>
-        <Class IRI="#Support"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Privacy"/>
-        <Class IRI="#Capabilities"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Processing_Board"/>
@@ -1472,20 +1343,12 @@
         <Class IRI="#SCADA"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SOA"/>
-        <Class IRI="#Application"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#SaaS"/>
         <Class IRI="#Cloud_service"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Satellite"/>
         <Class IRI="#Hardware_Platform"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Security"/>
-        <Class IRI="#Capabilities"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sensor_Actuator"/>
@@ -1552,10 +1415,6 @@
         <Class IRI="#Logic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Web_socket"/>
-        <Class IRI="#Application"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Wireless_sensor_network"/>
         <Class IRI="#Sensor_Actuator"/>
     </SubClassOf>
@@ -1579,106 +1438,6 @@
         <Class IRI="#iBeacon"/>
         <Class IRI="#Smart_Product"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://saref.etsi.org/core/Currency"/>
-        <Class IRI="UnitOfMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://saref.etsi.org/core/EnergyUnit"/>
-        <Class IRI="UnitOfMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://saref.etsi.org/core/IlluminanceUnit"/>
-        <Class IRI="UnitOfMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://saref.etsi.org/core/PowerUnit"/>
-        <Class IRI="UnitOfMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://saref.etsi.org/core/PressureUnit"/>
-        <Class IRI="UnitOfMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://saref.etsi.org/core/TemperatureUnit"/>
-        <Class IRI="UnitOfMeasure"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Algorithm"/>
-        <Class IRI="#Programming_Language"/>
-        <Class IRI="#Web_Technology"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Arduino"/>
-        <Class IRI="#Particle_Photon"/>
-        <Class IRI="#Raspberry_Pi"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#BLE"/>
-        <Class IRI="#HTTP"/>
-        <Class IRI="#IP"/>
-        <Class IRI="#LoWPAN"/>
-        <Class IRI="#MQTT"/>
-        <Class IRI="#NFC_tag"/>
-        <Class IRI="#Optical_tag"/>
-        <Class IRI="#PAN"/>
-        <Class IRI="#RFID_tag"/>
-        <Class IRI="#SAMPL"/>
-        <Class IRI="#TCP"/>
-        <Class IRI="#UDP"/>
-        <Class IRI="#WPAN"/>
-        <Class IRI="#XMPP"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#C"/>
-        <Class IRI="#Java"/>
-        <Class IRI="#Python"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Computer_architecture"/>
-        <Class IRI="#Control_engineering"/>
-        <Class IRI="#Data_transmission"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Control_System"/>
-        <Class IRI="#Electrical_Grids"/>
-        <Class IRI="#Factory_Equipment"/>
-        <Class IRI="#Factory_Floor"/>
-        <Class IRI="#Gas_Meter"/>
-        <Class IRI="#Oil_Pipeline_Control"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Digital"/>
-        <Class IRI="#Gateway"/>
-        <Class IRI="#Sensor_Actuator"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Django"/>
-        <Class IRI="#Node"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Ethics"/>
-        <Class IRI="#Management"/>
-        <Class IRI="#Privacy"/>
-        <Class IRI="#Security"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Mahout"/>
-        <Class IRI="#Mllib"/>
-        <Class IRI="#Spark"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Microprocessor_Platform"/>
-        <Class IRI="#Smartphone"/>
-    </DisjointClasses>
-    <ClassAssertion>
-        <Class IRI="#Blockchain_solution"/>
-        <NamedIndividual IRI="Distributed_authentication"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Blockchain_solution"/>
-        <NamedIndividual IRI="#Access_control"/>
-    </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Tool"/>
         <NamedIndividual IRI="#Apache_Hadoop"/>
@@ -1686,10 +1445,6 @@
     <ClassAssertion>
         <Class IRI="#Tool"/>
         <NamedIndividual IRI="#Apache_IoT_edge"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edge_application"/>
-        <NamedIndividual IRI="#Autonomous_vehicle"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Cloud_service"/>
@@ -1720,10 +1475,6 @@
         <NamedIndividual IRI="#Cloud_Photon2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Edge_application"/>
-        <NamedIndividual IRI="#Cloud_gaming"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Computer_cluster"/>
         <NamedIndividual IRI="#Cluster1"/>
     </ClassAssertion>
@@ -1732,20 +1483,12 @@
         <NamedIndividual IRI="#Cluster2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Edge_security"/>
-        <NamedIndividual IRI="#Computational_cost"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Flow"/>
         <NamedIndividual IRI="#Connection1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Flow"/>
         <NamedIndividual IRI="#Connection2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Blockchain_solution"/>
-        <NamedIndividual IRI="#Correct_Edge_implementation"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Data_center"/>
@@ -1764,10 +1507,6 @@
         <NamedIndividual IRI="#DC4"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Blockchain_solution"/>
-        <NamedIndividual IRI="#Data_protection"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#SCADA_problem"/>
         <NamedIndividual IRI="#Data_security_risk"/>
     </ClassAssertion>
@@ -1780,16 +1519,8 @@
         <NamedIndividual IRI="#Deep_learning_algorithm"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#BigData_capability"/>
-        <NamedIndividual IRI="#Distributed_capability"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#SCADA_solution"/>
         <NamedIndividual IRI="#End-to-end_encryption"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Blockchain_problem"/>
-        <NamedIndividual IRI="#Energy_managed"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#SCADA_today_protocol"/>
@@ -1798,18 +1529,6 @@
     <ClassAssertion>
         <Class IRI="#Tool"/>
         <NamedIndividual IRI="#Hadoop"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Blockchain_solution"/>
-        <NamedIndividual IRI="#Improve_central_algorithm"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Blockchain_solution"/>
-        <NamedIndividual IRI="#Integrity_assurance"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#BigData"/>
-        <NamedIndividual IRI="#Large_data_stream"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#SCADA_capability"/>
@@ -1876,10 +1595,6 @@
         <NamedIndividual IRI="#Photon2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Edge_application"/>
-        <NamedIndividual IRI="#Predictive_maintenance"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#RTD_sensor"/>
         <NamedIndividual IRI="#RTD3"/>
     </ClassAssertion>
@@ -1900,10 +1615,6 @@
         <NamedIndividual IRI="#RTDsensor2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Blockchain_solution"/>
-        <NamedIndividual IRI="#Reducing_latency_in_sending_data"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#SCADA"/>
         <NamedIndividual IRI="#SCADA_application"/>
     </ClassAssertion>
@@ -1912,32 +1623,12 @@
         <NamedIndividual IRI="#SCADA_system"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Blockchain_solution"/>
-        <NamedIndividual IRI="#Secure_key_management"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Blockchain_security"/>
-        <NamedIndividual IRI="#Security_problem"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Blockchain"/>
         <NamedIndividual IRI="#Smart_contracts"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Edge_application"/>
-        <NamedIndividual IRI="#Smart_grid"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edge_application"/>
-        <NamedIndividual IRI="#Smart_home"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#SCADA_solution"/>
         <NamedIndividual IRI="#Strong_authentication"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Blockchain_solution"/>
-        <NamedIndividual IRI="#Synchronization_in_throughput"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#SCADA_today_protocol"/>
@@ -1962,14 +1653,6 @@
     <ClassAssertion>
         <Class IRI="#SCADA_problem"/>
         <NamedIndividual IRI="#Threats_at_critical_infrastructure"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Blockchain_problem"/>
-        <NamedIndividual IRI="#Throughput_limited"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edge_security"/>
-        <NamedIndividual IRI="#Transmission_speed"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Data_center"/>
@@ -2388,10 +2071,6 @@
         <Class IRI="#SCADA"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#DevelopEdgeSecurity"/>
-        <Class IRI="#Edge_application"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#Lack_security_measure"/>
         <Class IRI="#SCADA_common_protocol"/>
     </ObjectPropertyDomain>
@@ -2410,10 +2089,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#authentication"/>
         <Class IRI="#MQTT"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#best_Practices"/>
-        <Class IRI="#Edge_security"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#challenge"/>
@@ -2460,20 +2135,8 @@
         <Class IRI="#Data_center"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasSolution"/>
-        <Class IRI="#Blockchain_problem"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasTechnology"/>
-        <Class IRI="#Edge_application"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasTool"/>
         <Class IRI="#Technology"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_SecuritySolution"/>
-        <Class IRI="#Edge_security"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#heat"/>
@@ -2502,10 +2165,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPartOf"/>
         <Class IRI="#SCADA"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isProcessed"/>
-        <Class IRI="#BigData"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isRepresentationOf"/>
@@ -2544,10 +2203,6 @@
         <Class IRI="#Firmware"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#supporting_tool"/>
-        <Class IRI="#Edge_application"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#threats_to_data_security"/>
         <Class IRI="#SCADA"/>
     </ObjectPropertyDomain>
@@ -2566,10 +2221,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Dealing_with_sensitive_data"/>
         <Class IRI="#SCADA_solution"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#DevelopEdgeSecurity"/>
-        <Class IRI="#Blockchain_solution"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Lack_security_measure"/>
@@ -2596,14 +2247,6 @@
         <Class IRI="#JSON_Web_Token"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#best_Practices"/>
-        <Class IRI="#Edge_application"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#challenge"/>
-        <Class IRI="#Blockchain_problem"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#countermeasure"/>
         <Class IRI="#SCADA_solution"/>
     </ObjectPropertyRange>
@@ -2624,10 +2267,6 @@
         <Class IRI="#Machine_Learning"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasCapability"/>
-        <Class IRI="#BigData_capability"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasElement"/>
         <Class IRI="#Transducer"/>
     </ObjectPropertyRange>
@@ -2636,20 +2275,8 @@
         <Class IRI="#Cloud_service"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasProblem"/>
-        <Class IRI="#Blockchain_problem"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasSecurity_problem"/>
-        <Class IRI="#Blockchain_solution"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasService"/>
         <Class IRI="#Cloud_service"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasSolution"/>
-        <Class IRI="#Blockchain_solution"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTechnology"/>
@@ -2658,10 +2285,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTool"/>
         <Class IRI="#Tool"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_SecuritySolution"/>
-        <Class IRI="#Blockchain_solution"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#heat"/>
@@ -2704,10 +2327,6 @@
         <Class IRI="#ICS"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isProcessed"/>
-        <Class IRI="#BigData_capability"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#isRepresentationOf"/>
         <Class IRI="#Smart_Product"/>
     </ObjectPropertyRange>
@@ -2738,10 +2357,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#request"/>
         <Class IRI="#Subscriber"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#requires"/>
-        <Class IRI="#BigData_capability"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#send"/>
@@ -3096,8 +2711,88 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#SensingDevice</IRI>
+        <Literal>Imported from IoT-Lite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.oclc.org/NET/ssnx/ssn#Sensor</IRI>
         <Literal>Class Sensor - is imported from the Iot-Lite ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>IIoT is a semantic ontology for the Internet of Things systems that consists of a hierarchy of classes corresponding to the layers of a general IoT architecture: Device, Network, Support, Application, and Capabilities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>Authors: Liviana N. Tudor, Lecia Barker, Mohammad Q. Azhar, Jorge Guerra, Clark Mousaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/Currency</IRI>
+        <Literal xml:lang="en">The class of units of measure for price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://saref.etsi.org/core/Currency</IRI>
+        <Literal xml:lang="en">Currency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/EnergyUnit</IRI>
+        <Literal xml:lang="en">The unit of measure for energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://saref.etsi.org/core/EnergyUnit</IRI>
+        <Literal xml:lang="en">Energy unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/IlluminanceUnit</IRI>
+        <Literal xml:lang="en">The unit of measure for light</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://saref.etsi.org/core/IlluminanceUnit</IRI>
+        <Literal xml:lang="en">Illuminance unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/PowerUnit</IRI>
+        <Literal xml:lang="en">The unit of measure for power</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://saref.etsi.org/core/PowerUnit</IRI>
+        <Literal xml:lang="en">Power unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/PressureUnit</IRI>
+        <Literal xml:lang="en">The unit of measure for pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://saref.etsi.org/core/PressureUnit</IRI>
+        <Literal xml:lang="en">Pressure unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/TemperatureUnit</IRI>
+        <Literal xml:lang="en">The unit of measure for temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://saref.etsi.org/core/TemperatureUnit</IRI>
+        <Literal xml:lang="en">Temperature unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/UnitOfMeasure</IRI>
+        <Literal>Class UnitOfMeasure - is imported from the Saref ontology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3196,17 +2891,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#BigData</IRI>
-        <Literal>Applications with Big Data - BigQuery, an enterprise data warehouse for large data that enables fast SQL queries. 
-The data stream from IoT systems is processed using cloud computing, big data, and artificial intelligence algorithms.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#BigData_capability</IRI>
-        <Literal>Big data capabilities - distributed processing and storing, big data analytics, machine learning algorithms.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Blockchain</IRI>
         <Literal>Blockchain is a promising technology for securing IoT data over a network. Blockchain has distributed capabilities for processing transactions and tracking assets in a business network.</Literal>
     </AnnotationAssertion>
@@ -3217,28 +2901,8 @@ The data stream from IoT systems is processed using cloud computing, big data, a
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Blockchain_problem</IRI>
-        <Literal>Blockchain problems: (a) Blockchain algorithm requires energy that IoT devices may not manage; (b) IoT devices continue to stream data while Blockchain throughput is limited; (c) Almost impossible to identify illegal Blockchain transaction; (d) Blockchain’s transparency feature brings privacy challenges for IoT customer, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Blockchain_security</IRI>
-        <Literal>Security for Blockchain is aimed at access control and securing communication between local IoT devices.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Blockchain_solution</IRI>
-        <Literal>Solutions for Blockchain problems - improving data privacy, reducing latency in sending data, and adjusting the deficiencies of the edge implementation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#C</IRI>
         <Literal>Embedded programming in C or C++ for IoT platforms like Arduino, Raspberry Pi, or Particle</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Capabilities</IRI>
-        <Literal>&quot;Capabilities&quot; - layer of the IoT architecture and include data management, security, privacy, and ethics.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3322,11 +2986,6 @@ The data stream from IoT systems is processed using cloud computing, big data, a
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Control_engineering</IRI>
-        <Literal>The Network class is defined as an aggregation of the three components: data transmission, control engineering, and computer architecture.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Correct_Edge_implementation</IRI>
         <Literal>Correct_Edge_implementation (Individual): a Blockchain solution</Literal>
     </AnnotationAssertion>
@@ -3387,11 +3046,6 @@ The data stream from IoT systems is processed using cloud computing, big data, a
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Data_transmission</IRI>
-        <Literal>The Network class is defined as an aggregation of the three components: data transmission, control engineering, and computer architecture.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Dealing_with_sensitive_data</IRI>
         <Literal>Dealing_with_sensitive_data (Object property): SCADA solutions are proper practices for systems dealing with sensitive data</Literal>
     </AnnotationAssertion>
@@ -3427,23 +3081,8 @@ The data stream from IoT systems is processed using cloud computing, big data, a
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Distributed_capability</IRI>
-        <Literal>Distributed_capability (Individual): Big data capability</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Distributed_operating_system</IRI>
         <Literal>A distributed operating system manages communication shared in a network of independent computers that possess their own memory unit and CPU. Ex: YARN, LOCUS, Mesos, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Distributed_processing</IRI>
-        <Literal>Big data distributed processing - uploading of big volumes of data, data processing and analyzing, and distribution into the clustered database.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Distributed_storage</IRI>
-        <Literal>Big data distributed storage - stores and processes data on multiple machines, using services managed by cloud systems.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3464,16 +3103,6 @@ The data stream from IoT systems is processed using cloud computing, big data, a
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Eddystone</IRI>
         <Literal>iBeacon from Apple and Eddystone from Google are portable electronic devices that use network protocols such as NFC, RFID, optical tags, or BLE as hardware transmitters.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Edge_application</IRI>
-        <Literal>Applications based on edge computing - the term &quot;edge&quot; refers to any computational or network resource available between the data source and the cloud services.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Edge_security</IRI>
-        <Literal>The edge security must consider criteria based on memory size, computational cost, transmission speed, etc. Blockchain may offer solutions such as (a) improving data privacy and reducing latency in sending data; b) a strong password policy, the encryption of messages, two-factor authentication, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3499,11 +3128,6 @@ The data stream from IoT systems is processed using cloud computing, big data, a
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Ethernet</IRI>
         <Literal>Ethernet (Individual): a SCADA todat protocol with Object property assertions (Support_communication)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Ethics</IRI>
-        <Literal>IoT systems should be ethics-compliant regarding the following key aspects: (a) humans rights; (b) to avoid subordination, manipulation, or stmulating the addicton; (c) products and services aim to bring positve changes to the society, environment, the persons, and economy.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3539,11 +3163,6 @@ The data stream from IoT systems is processed using cloud computing, big data, a
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Gateway</IRI>
         <Literal>Gateways process the data from multiple devices and send them to the cloud</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Grid</IRI>
-        <Literal>Grid computing is a form of distributed computing based on independent computers (with CPU, storage, power supplies, network interfaces, etc.) connected to a network by a network interface, such as Ethernet.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3717,16 +3336,6 @@ The data stream from IoT systems is processed using cloud computing, big data, a
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Management</IRI>
-        <Literal>Device and data management - Device management covers three operations: adding new devices, monitoring, and updating devices. The high-performance access to data from IoT applications can be maintained using Cloud Storage, an online storage service.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#MapR</IRI>
-        <Literal>MapReduce is a programming model for processing big data sets with a parallel, distributed algorithm on a cluster of computers. A MapReduce system has usually three operations: map, shuffle, and reduce. A popular open-source implementation is part of Apache Hadoop.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MapReduce</IRI>
         <Literal>MapReduce (Individual): a Tool with Object property assertions: isApplied</Literal>
     </AnnotationAssertion>
@@ -3892,11 +3501,6 @@ The data stream from IoT systems is processed using cloud computing, big data, a
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Peer-to-peer_system</IRI>
-        <Literal>A peer-to-peer system is a computer network that enables the sharing of network resources, computational power, and data storage, in an equal way between peers.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Photon1</IRI>
         <Literal>Photon1 (Individual): a Particle_Photon with Object property assertions (wire)</Literal>
     </AnnotationAssertion>
@@ -3914,11 +3518,6 @@ The data stream from IoT systems is processed using cloud computing, big data, a
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Predictive_maintenance</IRI>
         <Literal>Predictive_maintenance (Individual): an Edge application with Object property assertions (hasTechnology)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Privacy</IRI>
-        <Literal>Privacy and data protection throughout their use and processing personal data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4067,11 +3666,6 @@ The data stream from IoT systems is processed using cloud computing, big data, a
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#SOA</IRI>
-        <Literal>Applications based on the Service-Oriented Architecture (SOA)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SaaS</IRI>
         <Literal>SaaS (Software-as-a-Service) is a cloud service that supports running end-user applications. The cloud service provider develops and maintains software for cloud applications and makes the software available to its customers over the Internet.</Literal>
     </AnnotationAssertion>
@@ -4084,11 +3678,6 @@ The data stream from IoT systems is processed using cloud computing, big data, a
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Secure_key_management</IRI>
         <Literal>Secure_key_management (Individual): a Blockchain solution</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Security</IRI>
-        <Literal>The security concerns for the IoT systems refer to denial-of-service (DoS) attacks through concurrent requests, weak protection credentials, insecure communication between devices, recovery, data backup during a system interruption, limited network visibility, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4244,11 +3833,6 @@ The data stream from IoT systems is processed using cloud computing, big data, a
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Web_Technology</IRI>
         <Literal>Hardware components of an IoT system are integrated with certain Web technologies and software platforms.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Web_socket</IRI>
-        <Literal>Applications that use the WebSocket API</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4519,81 +4103,6 @@ The data stream from IoT systems is processed using cloud computing, big data, a
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#wire</IRI>
         <Literal>wire (Object property): When the wire of a Particle Photon is connected, the Photon will send the value “1”, but if the wire is disconnected, the Photon will send the value “0”.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
-        <Literal>IIoT is a semantic ontology for the Internet of Things systems that consists of a hierarchy of classes corresponding to the layers of a general IoT architecture: Device, Network, Support, Application, and Capabilities.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
-        <Literal>Authors: Liviana N. Tudor, Lecia Barker, Mohammad Q. Azhar, Jorge Guerra, Clark Mousaw</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://saref.etsi.org/core/Currency</IRI>
-        <Literal xml:lang="en">The class of units of measure for price</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://saref.etsi.org/core/Currency</IRI>
-        <Literal xml:lang="en">Currency</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://saref.etsi.org/core/EnergyUnit</IRI>
-        <Literal xml:lang="en">The unit of measure for energy</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://saref.etsi.org/core/EnergyUnit</IRI>
-        <Literal xml:lang="en">Energy unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://saref.etsi.org/core/IlluminanceUnit</IRI>
-        <Literal xml:lang="en">The unit of measure for light</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://saref.etsi.org/core/IlluminanceUnit</IRI>
-        <Literal xml:lang="en">Illuminance unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://saref.etsi.org/core/PowerUnit</IRI>
-        <Literal xml:lang="en">The unit of measure for power</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://saref.etsi.org/core/PowerUnit</IRI>
-        <Literal xml:lang="en">Power unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://saref.etsi.org/core/PressureUnit</IRI>
-        <Literal xml:lang="en">The unit of measure for pressure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://saref.etsi.org/core/PressureUnit</IRI>
-        <Literal xml:lang="en">Pressure unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://saref.etsi.org/core/TemperatureUnit</IRI>
-        <Literal xml:lang="en">The unit of measure for temperature</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://saref.etsi.org/core/TemperatureUnit</IRI>
-        <Literal xml:lang="en">Temperature unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://saref.etsi.org/core/UnitOfMeasure</IRI>
-        <Literal>Class UnitOfMeasure - is imported from the Saref ontology</Literal>
     </AnnotationAssertion>
 </Ontology>
 
