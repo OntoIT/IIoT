@@ -1,0 +1,2014 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://tudorliv.github.io/IIoT/Network/Data_transmission.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://tudorliv.github.io/IIoT/Network/Data_transmission.owl"
+     versionIRI="https://tudorliv.github.io/IIoT/Network/Data_transmission.owl">
+    <Prefix name="" IRI="https://w3id.org/IIoT/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <IRI>http://creativecommons.org/licenses/by/2.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0002-0814-2615</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0003-0702-6134</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0003-1562-6922</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0003-2392-7821</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <IRI>https://orcid.org/0000-0001-6788-630X</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <IRI>https://orcid.org/0000-0003-3562-0528</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal xml:lang="en">The Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Device, Application. Network, Support, Capabilities</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <Literal xml:lang="en">2023-08-27</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <Literal xml:lang="en">2024-07-29</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal xml:lang="en">Ontology for Industrial Internet of Things systems</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">Version 1.1</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <Literal xml:lang="en">iiot</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI>https://w3id.org/iiot-#</IRI>
+    </Annotation>
+    <Declaration>
+        <Class IRI="Vocabulary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BLE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HTTP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ISO_stack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LoWPAN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MQTT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NFC_tag"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Optical_tag"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PAN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RFID_tag"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SAMPL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TCP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UDP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WPAN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XMPP"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Dealing_with_sensitive_data"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DevelopEdgeSecurity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Lack_security_measure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Protocols_were_layered"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SCADA_hasCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Support_communication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#authentication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#best_Practices"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#challenge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#countermeasure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#data_transfer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#flow_services"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAlgorithm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasElement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFunctionality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProblem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSecurity_problem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTechnology"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTool"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_SecuritySolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#heat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isApplied"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConnectedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIdentified"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isManagedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProcessed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRepresentationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isToolFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUsedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#login"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#read"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#regulationTemperature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#request"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#send"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supporting_tool"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#threats_to_data_security"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#useAlgorithm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#useProgramming"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wire"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#FireFly_nodes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MicroSD_card"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Password_mobile_node"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Power_supply"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#RAM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#disconnect_timeout"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAccuracy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTemperatureRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTimeLimit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValueConnection"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#languages_tools"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#operating_system"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#provideHeat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Distributed_authentication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Access_control"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Apache_Hadoop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Apache_IoT_edge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Autonomous_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Avoid_synchronization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Azure_IoT_edge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BACnet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Blockchain_algorithm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Centralized_service"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cloud_Photon1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cloud_Photon2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cloud_gaming"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cluster1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cluster2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Computational_cost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Connection1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Connection2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Correct_Edge_implementation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DC1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DC2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DC3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DC4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Data_protection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Data_security_risk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Data_stream_continue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deep_learning_algorithm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Distributed_capability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#End-to-end_encryption"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Energy_managed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ethernet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hadoop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Improve_central_algorithm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Integrity_assurance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Large_data_stream"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Long-distance_communication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maintain_configuration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MapReduce"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Micro_data_center"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Modbus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OPC_servers"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oven1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oven2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oven3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oven4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oven5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Particle_publish1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Particle_publish2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paxos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Photon1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Photon2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Predictive_maintenance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RTD3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RTD4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RTD5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RTDsensor1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RTDsensor2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reducing_latency_in_sending_data"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SCADA_application"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SCADA_system"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Secure_key_management"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Security_problem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smart_contracts"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smart_grid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smart_home"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Strong_authentication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Synchronization_in_throughput"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TCP_IP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tensor_Flow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Theano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thingspeak1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thingspeak2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Threats_at_critical_infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Throughput_limited"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transmission_speed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zookeeper"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+    </Declaration>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Particle_publish1"/>
+        <NamedIndividual IRI="#Particle_publish2"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Thingspeak1"/>
+        <NamedIndividual IRI="#Thingspeak2"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isToolFor"/>
+        <NamedIndividual IRI="#Apache_Hadoop"/>
+        <NamedIndividual IRI="#Large_data_stream"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnology"/>
+        <NamedIndividual IRI="#Autonomous_vehicle"/>
+        <NamedIndividual IRI="#Micro_data_center"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Lack_security_measure"/>
+        <NamedIndividual IRI="#BACnet"/>
+        <NamedIndividual IRI="#Threats_at_critical_infrastructure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Protocols_were_layered"/>
+        <NamedIndividual IRI="#BACnet"/>
+        <NamedIndividual IRI="#Ethernet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProblem"/>
+        <NamedIndividual IRI="#Blockchain_algorithm"/>
+        <NamedIndividual IRI="#Energy_managed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#request"/>
+        <NamedIndividual IRI="#Cloud_Photon1"/>
+        <NamedIndividual IRI="#Thingspeak1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#request"/>
+        <NamedIndividual IRI="#Cloud_Photon2"/>
+        <NamedIndividual IRI="#Thingspeak2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnology"/>
+        <NamedIndividual IRI="#Cloud_gaming"/>
+        <NamedIndividual IRI="#Micro_data_center"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#best_Practices"/>
+        <NamedIndividual IRI="#Computational_cost"/>
+        <NamedIndividual IRI="#Smart_grid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_SecuritySolution"/>
+        <NamedIndividual IRI="#Computational_cost"/>
+        <NamedIndividual IRI="#Correct_Edge_implementation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#read"/>
+        <NamedIndividual IRI="#Connection1"/>
+        <NamedIndividual IRI="#Particle_publish1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#read"/>
+        <NamedIndividual IRI="#Connection2"/>
+        <NamedIndividual IRI="#Particle_publish2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasService"/>
+        <NamedIndividual IRI="#DC1"/>
+        <NamedIndividual IRI="#Centralized_service"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useAlgorithm"/>
+        <NamedIndividual IRI="#DC1"/>
+        <NamedIndividual IRI="#Paxos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasService"/>
+        <NamedIndividual IRI="#DC2"/>
+        <NamedIndividual IRI="#Avoid_synchronization"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useAlgorithm"/>
+        <NamedIndividual IRI="#DC2"/>
+        <NamedIndividual IRI="#Zookeeper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasService"/>
+        <NamedIndividual IRI="#DC3"/>
+        <NamedIndividual IRI="#Avoid_synchronization"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useAlgorithm"/>
+        <NamedIndividual IRI="#DC3"/>
+        <NamedIndividual IRI="#Paxos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useAlgorithm"/>
+        <NamedIndividual IRI="#DC4"/>
+        <NamedIndividual IRI="#Paxos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#countermeasure"/>
+        <NamedIndividual IRI="#Data_security_risk"/>
+        <NamedIndividual IRI="#End-to-end_encryption"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#countermeasure"/>
+        <NamedIndividual IRI="#Data_security_risk"/>
+        <NamedIndividual IRI="#Strong_authentication"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProblem"/>
+        <NamedIndividual IRI="#Data_stream_continue"/>
+        <NamedIndividual IRI="#Throughput_limited"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSolution"/>
+        <NamedIndividual IRI="#Energy_managed"/>
+        <NamedIndividual IRI="#Improve_central_algorithm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Support_communication"/>
+        <NamedIndividual IRI="#Ethernet"/>
+        <NamedIndividual IRI="#Long-distance_communication"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <NamedIndividual IRI="#Hadoop"/>
+        <NamedIndividual IRI="#Cluster1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <NamedIndividual IRI="#Hadoop"/>
+        <NamedIndividual IRI="#Cluster2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isProcessed"/>
+        <NamedIndividual IRI="#Large_data_stream"/>
+        <NamedIndividual IRI="#Distributed_capability"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isApplied"/>
+        <NamedIndividual IRI="#MapReduce"/>
+        <NamedIndividual IRI="#Cluster1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTool"/>
+        <NamedIndividual IRI="#Micro_data_center"/>
+        <NamedIndividual IRI="#Azure_IoT_edge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Lack_security_measure"/>
+        <NamedIndividual IRI="#Modbus"/>
+        <NamedIndividual IRI="#Threats_at_critical_infrastructure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Protocols_were_layered"/>
+        <NamedIndividual IRI="#Modbus"/>
+        <NamedIndividual IRI="#TCP_IP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTool"/>
+        <NamedIndividual IRI="#OPC_servers"/>
+        <NamedIndividual IRI="#Apache_IoT_edge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#send"/>
+        <NamedIndividual IRI="#Particle_publish1"/>
+        <NamedIndividual IRI="#Cloud_Photon1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#send"/>
+        <NamedIndividual IRI="#Particle_publish2"/>
+        <NamedIndividual IRI="#Cloud_Photon2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isApplied"/>
+        <NamedIndividual IRI="#Paxos"/>
+        <NamedIndividual IRI="#DC1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isApplied"/>
+        <NamedIndividual IRI="#Paxos"/>
+        <NamedIndividual IRI="#DC3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isApplied"/>
+        <NamedIndividual IRI="#Paxos"/>
+        <NamedIndividual IRI="#DC4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wire"/>
+        <NamedIndividual IRI="#Photon1"/>
+        <NamedIndividual IRI="#Connection1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wire"/>
+        <NamedIndividual IRI="#Photon2"/>
+        <NamedIndividual IRI="#Connection2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnology"/>
+        <NamedIndividual IRI="#Predictive_maintenance"/>
+        <NamedIndividual IRI="#OPC_servers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#heat"/>
+        <NamedIndividual IRI="#RTD3"/>
+        <NamedIndividual IRI="#Oven3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#heat"/>
+        <NamedIndividual IRI="#RTD4"/>
+        <NamedIndividual IRI="#Oven4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#heat"/>
+        <NamedIndividual IRI="#RTD5"/>
+        <NamedIndividual IRI="#Oven5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#heat"/>
+        <NamedIndividual IRI="#RTDsensor1"/>
+        <NamedIndividual IRI="#Oven1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#heat"/>
+        <NamedIndividual IRI="#RTDsensor2"/>
+        <NamedIndividual IRI="#Oven2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#threats_to_data_security"/>
+        <NamedIndividual IRI="#SCADA_application"/>
+        <NamedIndividual IRI="#Data_security_risk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSolution"/>
+        <NamedIndividual IRI="#Security_problem"/>
+        <NamedIndividual IRI="#Access_control"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSolution"/>
+        <NamedIndividual IRI="#Security_problem"/>
+        <NamedIndividual IRI="#Data_protection"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSolution"/>
+        <NamedIndividual IRI="#Security_problem"/>
+        <NamedIndividual IRI="#Integrity_assurance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSolution"/>
+        <NamedIndividual IRI="#Security_problem"/>
+        <NamedIndividual IRI="#Secure_key_management"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSecurity_problem"/>
+        <NamedIndividual IRI="#Smart_contracts"/>
+        <NamedIndividual IRI="#Security_problem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnology"/>
+        <NamedIndividual IRI="#Smart_grid"/>
+        <NamedIndividual IRI="#OPC_servers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnology"/>
+        <NamedIndividual IRI="#Smart_home"/>
+        <NamedIndividual IRI="#OPC_servers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Support_communication"/>
+        <NamedIndividual IRI="#TCP_IP"/>
+        <NamedIndividual IRI="#Long-distance_communication"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isToolFor"/>
+        <NamedIndividual IRI="#Tensor_Flow"/>
+        <NamedIndividual IRI="#Deep_learning_algorithm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isToolFor"/>
+        <NamedIndividual IRI="#Theano"/>
+        <NamedIndividual IRI="#Deep_learning_algorithm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSolution"/>
+        <NamedIndividual IRI="#Throughput_limited"/>
+        <NamedIndividual IRI="#Synchronization_in_throughput"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#best_Practices"/>
+        <NamedIndividual IRI="#Transmission_speed"/>
+        <NamedIndividual IRI="#Smart_home"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_SecuritySolution"/>
+        <NamedIndividual IRI="#Transmission_speed"/>
+        <NamedIndividual IRI="#Reducing_latency_in_sending_data"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasService"/>
+        <NamedIndividual IRI="#Zookeeper"/>
+        <NamedIndividual IRI="#Maintain_configuration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isApplied"/>
+        <NamedIndividual IRI="#Zookeeper"/>
+        <NamedIndividual IRI="#DC2"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValueConnection"/>
+        <NamedIndividual IRI="#Connection1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValueConnection"/>
+        <NamedIndividual IRI="#Connection2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Oven1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">508.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Oven2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">502.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Oven3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">501.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Oven4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">506.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTimeLimit"/>
+        <NamedIndividual IRI="#Particle_publish1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTimeLimit"/>
+        <NamedIndividual IRI="#Particle_publish2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAccuracy"/>
+        <NamedIndividual IRI="#RTD3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provideHeat"/>
+        <NamedIndividual IRI="#RTD3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">510.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAccuracy"/>
+        <NamedIndividual IRI="#RTD4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provideHeat"/>
+        <NamedIndividual IRI="#RTD4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">520.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAccuracy"/>
+        <NamedIndividual IRI="#RTDsensor1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provideHeat"/>
+        <NamedIndividual IRI="#RTDsensor1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">480.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAccuracy"/>
+        <NamedIndividual IRI="#RTDsensor2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provideHeat"/>
+        <NamedIndividual IRI="#RTDsensor2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">500.0</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCapability"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#useAlgorithm"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#useProgramming"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasService"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#authentication"/>
+        <Class IRI="#MQTT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#data_transfer"/>
+        <Class IRI="#MQTT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isIdentified"/>
+        <Class IRI="#BLE"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isIdentified"/>
+        <Class IRI="#NFC_tag"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isIdentified"/>
+        <Class IRI="#Optical_tag"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isIdentified"/>
+        <Class IRI="#RFID_tag"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MicroSD_card"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Power_supply"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#RAM"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#FireFly_nodes"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#FireFly_nodes"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MicroSD_card"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#MicroSD_card"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:double"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">8.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Password_mobile_node"/>
+        <DataHasValue>
+            <DataProperty IRI="#Password_mobile_node"/>
+            <Literal>password</Literal>
+        </DataHasValue>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Power_supply"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Power_supply"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:float"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#RAM"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#RAM"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#disconnect_timeout"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#disconnect_timeout"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAccuracy"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasAccuracy"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:float"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.1</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasTemperatureRange"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:double"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">500.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">510.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTimeLimit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasTimeLimit"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">29</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValueConnection"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasValueConnection"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#languages_tools"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#languages_tools"/>
+                <Literal>C</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#languages_tools"/>
+                <Literal>C++</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#languages_tools"/>
+                <Literal>Cosm</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#languages_tools"/>
+                <Literal>Ladder Logic</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#languages_tools"/>
+                <Literal>Nimbits</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#languages_tools"/>
+                <Literal>Python</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#languages_tools"/>
+                <Literal>Wyliodrin Studio</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#operating_system"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#operating_system"/>
+                <Literal>Android</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#operating_system"/>
+                <Literal>Linux</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#operating_system"/>
+                <Literal>Mac</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#operating_system"/>
+                <Literal>RaspberryPi</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#operating_system"/>
+                <Literal>Raspbian</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#operating_system"/>
+                <Literal>Windows</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#provideHeat"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#provideHeat"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:double"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-200.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">600.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#FireFly_nodes"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MicroSD_card"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Password_mobile_node"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Power_supply"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#RAM"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#disconnect_timeout"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAccuracy"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTimeLimit"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValueConnection"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#languages_tools"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#operating_system"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#provideHeat"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>Data_transmission is a component of the Network layer.
+Implementation in OWL 2 language: Data_transmission.owl is an instance of the Network class.
+Data transmisiion is managed by network protocols (communication protocols) in a computer or telecommunications network. Network protocols form the protocol layer according to OSI levels.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>Authors: Liviana N. Tudor, Lecia Barker, Mohammad Q. Azhar, Jorge Guerra, Clark Mousaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/UnitOfMeasure</IRI>
+        <Literal>Class UnitOfMeasure - is imported from the Saref ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Distributed_authentication</IRI>
+        <Literal>Distributed_authentication (Individual): a Blockchain solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Access_control</IRI>
+        <Literal>Access_control (Individual): a Blockchain solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Apache_Hadoop</IRI>
+        <Literal>Apache_Hadoop (Individual): a Tool with Object property assertions: isToolFor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Apache_IoT_edge</IRI>
+        <Literal>Apache_IoT_edge (Individual): a Tool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Autonomous_vehicle</IRI>
+        <Literal>Autonomous_vehicle (Individual): an Edge application with Object property assertions (hasTechnology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Avoid_synchronization</IRI>
+        <Literal>Avoid_synchronization (Individual): a Cloud service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Azure_IoT_edge</IRI>
+        <Literal>Azure_IoT_edge (Individual): a Tool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BACnet</IRI>
+        <Literal>BACnet (Individual): a SCADA common protocol with Object property assertions (Protocols_were_layered, Lack_security_measure)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BLE</IRI>
+        <Literal>BLE tags (Bluetooth Low Energy beacons) - protocols for small data exchanges are small Bluetooth hardware components that are used to locate people or objects.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Blockchain_algorithm</IRI>
+        <Literal>Blockchain_algorithm (Individual): of type Blockchain with Object property assertions: hasProblem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Centralized_service</IRI>
+        <Literal>Centralized_service (Individual): a Cloud service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cloud_Photon1</IRI>
+        <Literal>Cloud_Photon1 (Individual): a Particle_cloud with Object property assertions (request)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cloud_Photon2</IRI>
+        <Literal>Cloud_Photon2 (Individual): a Particle_cloud with Object property assertions (request)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cloud_gaming</IRI>
+        <Literal>Cloud_gaming (Individual): an Edge application with Object property assertions (hasTechnology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cluster1</IRI>
+        <Literal>Cluster1 (Individual): a Computer cluster</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cluster2</IRI>
+        <Literal>Cluster2 (Individual): a Computer cluster</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Computational_cost</IRI>
+        <Literal>Computational_cost (Individual): of type Edge security with Object property assertions: has_SecuritySolution, best_Practices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Connection1</IRI>
+        <Literal>Connection1 (Individual): a Flow with Object property assertions (read), Data property assertions (hasValueConnection)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Connection2</IRI>
+        <Literal>Connection2 (Individual): a Flow with Object property assertions (read), Data property assertions (hasValueConnection)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Correct_Edge_implementation</IRI>
+        <Literal>Correct_Edge_implementation (Individual): a Blockchain solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DC1</IRI>
+        <Literal>DC1 (Individual): a Data center with Object property assertions (hasService, useAlgorithm)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DC2</IRI>
+        <Literal>DC2 (Individual): a Data center with Object property assertions (hasService, useAlgorithm)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DC3</IRI>
+        <Literal>DC3 (Individual): a Data center with Object property assertions (hasService, useAlgorithm)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DC4</IRI>
+        <Literal>DC4 (Individual): a Data center with Object property assertions (useAlgorithm)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Data_protection</IRI>
+        <Literal>Data_protection (Individual): a Blockchain solution with Object property assertions: hasSolution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Data_security_risk</IRI>
+        <Literal>Data_security_risk (Individual): a SCADA problem with Object property assertions (countermeasure)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Data_stream_continue</IRI>
+        <Literal>Data_stream_continue (Individual): of type Blockchain with Object property assertions: hasProblem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dealing_with_sensitive_data</IRI>
+        <Literal>Dealing_with_sensitive_data (Object property): SCADA solutions are proper practices for systems dealing with sensitive data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Deep_learning_algorithm</IRI>
+        <Literal>Deep_learning_algorithm (Individual): of type Deep learning with Object property assertions (hasTool)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DevelopEdgeSecurity</IRI>
+        <Literal>DevelopEdgeSecurity (Object property): develops solutions for edge applications using Blockchain capabilities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#End-to-end_encryption</IRI>
+        <Literal>End-to-end_encryption (Object property): a SCADA_solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Energy_managed</IRI>
+        <Literal>Energy_managed (Individual): a Blockchain problem with Object property assertions (hasSolution)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ethernet</IRI>
+        <Literal>Ethernet (Individual): a SCADA todat protocol with Object property assertions (Support_communication)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FireFly_nodes</IRI>
+        <Literal>FireFly_nodes (Data property): in a FireFly wireless sensor network, each gateway is set to manage between 20 and 32 network nodes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HTTP</IRI>
+        <Literal>HTTP (Hypertext Transfer Protocol) is part of the Internet protocol suite, allows access to pages from Web servers. HTTP is an application layer protocol according to the OSI reference model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hadoop</IRI>
+        <Literal>Hadoop (Individual): a Tool with Object property assertions: isUsedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IP</IRI>
+        <Literal>IP (Internet Protocol) is a protocol for transmitting data over the Internet. The data is retrieved and divided into datagrams (IP packets) by the transport layer, transmitted over the Internet, and then reassembled by the network layer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ISO_stack</IRI>
+        <Literal>ISO stack - protocols stack developed by the International Organization of Standardization (ISO). Each layer of the ISO model has certain protocols and functions. The ISO protocols stack works from the hardware physical layer to the software application layer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Improve_central_algorithm</IRI>
+        <Literal>Improve_central_algorithm (Individual): a Blockchain solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Integrity_assurance</IRI>
+        <Literal>Integrity_assurance (Individual): a Blockchain solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Lack_security_measure</IRI>
+        <Literal>Lack_security_measure (Object property): The SCADA common protocols such as Modbus and BACnet lack the built-in security measures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Large_data_stream</IRI>
+        <Literal>Large_data_stream (Individual): of type Big Data with Object property assertions (isProcessed)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LoWPAN</IRI>
+        <Literal>The LoWPAN protocol belongs to the Internet layer and is extended from IP. It works on Low Power and Wireless Personal Area Network i.e., LoWPAN, and comprises an edge router and sensor nodes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Long-distance_communication</IRI>
+        <Literal>Long-distance_communication (Individual): a SCADA_capability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MQTT</IRI>
+        <Literal>MQTT (Message Queue Telemetry Transport) is a standard IoT protocol that transfers data provided by sensors and performs communications via satellite.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Maintain_configuration</IRI>
+        <Literal>Maintain_configuration (Individual): a Cloud service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MapReduce</IRI>
+        <Literal>MapReduce (Individual): a Tool with Object property assertions: isApplied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MicroSD_card</IRI>
+        <Literal>MicroSD_card (Data property): setting up Raspberry Pi 4 Model B requires a microSD card with a capacity of at least 8GB</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Micro_data_center</IRI>
+        <Literal>Micro_data_center (Individual): an edge technology with Object property assertions: hasTool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Modbus</IRI>
+        <Literal>Modbus (Individual): a SCADA common protocol with Object property assertions (Lack_security_measure, Protocols_were_layered)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NFC_tag</IRI>
+        <Literal>NFC tags (Near Field Communication limited to high-frequency) are protocols that identify passive things. NFC tags are passive, meaning they don&apos;t have any power source. They take power from the device that reads them, through magnetic induction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OPC_servers</IRI>
+        <Literal>OPC_servers (Individual): an edge technology with Object property assertions: hasTool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Optical_tag</IRI>
+        <Literal>Identifying passive things can be performed using protocols such as optical tags, as hardware transmitters to nearby portable electronic devices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Oven1</IRI>
+        <Literal>Oven1 (Individual): an Industrial_oven with Data property assertions (hasTemperatureRange)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Oven2</IRI>
+        <Literal>Oven2 (Individual): an Industrial_oven with Data property assertions (hasTemperatureRange)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Oven3</IRI>
+        <Literal>Oven3 (Individual): an Industrial_oven with Data property assertions (hasTemperatureRange)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Oven4</IRI>
+        <Literal>Oven4 (Individual): an Industrial_oven with Data property assertions (hasTemperatureRange)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Oven5</IRI>
+        <Literal>Oven5 (Individual): an Industrial_oven</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PAN</IRI>
+        <Literal>PAN (Personal Area Network) is a network protocol that ensures the connection between devices within a radius of 10 meters. A PAN usually involves a PC, phone, personal digital assistant, tablet, printer, speakers, video game consoles, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Particle_publish1</IRI>
+        <Literal>Particle_publish1 (Individual): a Firmware with Object property assertions (send), Data property assertions (hasTimeLimit)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Particle_publish2</IRI>
+        <Literal>Particle_publish2 (Individual): a Firmware with Object property assertions (send), Data property assertions (hasTimeLimit)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Password_mobile_node</IRI>
+        <Literal>Password_mobile_node (Data property): in a FireFly wireless sensor network, a mobile node logins with a password of at most 100 bytes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Paxos</IRI>
+        <Literal>Paxos (Individual): a Data center with Object property assertions: isApplied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Photon1</IRI>
+        <Literal>Photon1 (Individual): a Particle_Photon with Object property assertions (wire)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Photon2</IRI>
+        <Literal>Photon2 (Individual): a Particle_Photon with Object property assertions (wire)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Power_supply</IRI>
+        <Literal>Power_supply (Data property): Setting up Raspberry Pi 4 Model B requires a power supply that provides at least 3.0 amps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Predictive_maintenance</IRI>
+        <Literal>Predictive_maintenance (Individual): an Edge application with Object property assertions (hasTechnology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Protocols_were_layered</IRI>
+        <Literal>Protocols_were_layered (Object property): SCADA common protocols, such as Modbus and BACnet, were layered into Ethernet and TCP/IP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RAM</IRI>
+        <Literal>RAM (Data property): setting up Raspberry Pi 4 Model B requires at least 2GB RAM for use as a desktop computer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RFID_tag</IRI>
+        <Literal>RFID tags (Radio Frequency Identification) are used as hardware transmitters to nearby portable electronic devices, for identifying passive things.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RTD3</IRI>
+        <Literal>RTD3 (Individual): a RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RTD4</IRI>
+        <Literal>RTD4 (Individual): a RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RTD5</IRI>
+        <Literal>RTD5 (Individual): a RTD_sensor with Object property assertions (heat)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RTDsensor1</IRI>
+        <Literal>RTDsensor1 (Individual): a RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RTDsensor2</IRI>
+        <Literal>RTDsensor2 (Individual): a RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reducing_latency_in_sending_data</IRI>
+        <Literal>Reducing_latency_in_sending_data (Individual): a Blockchain solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SAMPL</IRI>
+        <Literal>SAMPL is a compact network layer that operates on top of a low-power CSMA/CA-based MAC protocol. SAMPL operates as part of the sensor Andrew project at Carnegie Mellon University and FireFly wireless sensor networks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SCADA_application</IRI>
+        <Literal>SCADA_application (Individual): of type SCADA with Object property assertions (threats_to_data_security)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SCADA_hasCapability</IRI>
+        <Literal>SCADA_hasCapability (Object property): SCADA systems provide  capabilities for industrial systems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SCADA_system</IRI>
+        <Literal>SCADA_system (Individual): of type SCADA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Secure_key_management</IRI>
+        <Literal>Secure_key_management (Individual): a Blockchain solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Security_problem</IRI>
+        <Literal>Security_problem (Individual): of type Blockchain security with Object property assertions (hasSolution)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Smart_contracts</IRI>
+        <Literal>Smart_contracts (Individual): of type Blockchain with Object property assertions (hasSecurity)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Smart_grid</IRI>
+        <Literal>Smart_grid (Individual): an Edge application with Object property assertions (hasTechnology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Smart_home</IRI>
+        <Literal>Smart_home (Individual): an Edge application with Object property assertions (hasTechnology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Strong_authentication</IRI>
+        <Literal>Strong_authentication (Object property): a SCADA_solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Support_communication</IRI>
+        <Literal>Support_communication (Object property): SCADA systems perform communication with industrial systems in distributed architectures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Synchronization_in_throughput</IRI>
+        <Literal>Synchronization_in_throughput (Individual): a Blockchain solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TCP</IRI>
+        <Literal>TCP (Transmission Control Protocol) corresponds to the Transport layer of the Internet protocol suite TCP/IP. Common applications using TCP are the World Wide Web (WWW), e-mail, and file transfer (FTP).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TCP_IP</IRI>
+        <Literal>TCP_IP (Individual): a SCADA today protocol with Object property assertions (Support_communication)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tensor_Flow</IRI>
+        <Literal>Tensor_Flow (Individual): a Tool with Object property assertions (isToolFor)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Theano</IRI>
+        <Literal>Theano (Individual): a Tool with Object property assertions (isToolFor)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Thingspeak1</IRI>
+        <Literal>Thingspeak1 (Individual): a Subscriber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Thingspeak2</IRI>
+        <Literal>Thingspeak2 (Individual): a Subscriber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Threats_at_critical_infrastructure</IRI>
+        <Literal>Threats_at_critical_infrastructure (Individual): a SCADA problem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Throughput_limited</IRI>
+        <Literal>Throughput_limited (Individual): a Blockchain problem with Object property assertions (hasSolution)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Transmission_speed</IRI>
+        <Literal>Transmission_speed (Individual): of type Edge security with Object property assertions (has_SecuritySolution, best_Practices)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UDP</IRI>
+        <Literal>UDP (User Datagram Protocol) corresponds to the Transport layer of the Internet protocol suite TCP/IP. UDP ensures the delivery of messages over a network, but unlike the TCP protocol, information packets are generally sent without receipt confirmation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WPAN</IRI>
+        <Literal>WPAN (Wireless Personal Area Network) is a PAN that ensures the connection between devices through wireless, within a radius of 10 meters. WPAN includes wearable devices, USB flash drives, wireless mouse, Bluetooth, Wi-Fi, thermostats, security systems, lighting controls, motion sensors, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XMPP</IRI>
+        <Literal>XMPP (Extensible Messaging and Presence Protocol) is an open standard that offers support for middleware applications, invisible messaging with the TCP network layer (hides the details of messaging), voice and video calls, collaboration, and generalized routing of XML data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Zookeeper</IRI>
+        <Literal>Zookeeper (Individual): a Data_center with Object property assertions: isApplied, hasService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#authentication</IRI>
+        <Literal>authentication (Object property): the MQTT and HTTP bridges use authentication with asymmetric public keys and JSON Web tokens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#best_Practices</IRI>
+        <Literal>best_Practices (Object property): defines the best practices for the edge security problems using Blockchain solutions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#challenge</IRI>
+        <Literal>challenge (Object property): Blockchain technology comes some challenges (problems) to implementation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#countermeasure</IRI>
+        <Literal>countermeasure (Object property): SCADA solutions represent countermeasure against threats generated by SCADA security problems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#data_transfer</IRI>
+        <Literal>data_transfer (Object property): an MQTT protocol transfers data provided by sensors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#disconnect_timeout</IRI>
+        <Literal>disconnect_timeout (Data property): in a FireFly wireless sensor network, the SAMPL messages require a disconnect timeout for replying to messages on the mobile device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#flow_services</IRI>
+        <Literal>flow_services: Object property that ensures the flows and services from Particle Photon to the subscriber (Thingspeak)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAccuracy</IRI>
+        <Literal>hasAccuracy (Data property): the accuracy provided by RTD sensors is between 0.1 and 1 °C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAlgorithm</IRI>
+        <Literal>hasAlgorithm (Object property): Gateway devices provide real-time analytics or machine learning algorithms, in edge computing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCapability</IRI>
+        <Literal>hasCapability (Object property): tool that provides capabilities for big data processing in distributed systems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasElement</IRI>
+        <Literal>hasElement (Object property): Sensor Andrew - sharing of transducers. There are two types of transducers: sensors and actuators.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFunctionality</IRI>
+        <Literal>hasFunctionality (Object property): a data center offers cloud services (as functionality)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasProblem</IRI>
+        <Literal>hasProblem (Object property): Blockchain technology has some problems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSecurity_problem</IRI>
+        <Literal>hasSecurity_problem (Object property): solutions for security problems in Blockchain technology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasService</IRI>
+        <Literal>hasService (Object property): specifies cloud services provided by data centers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSolution</IRI>
+        <Literal>hasSolution (Object property): solutions for Blockchain problems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTechnology</IRI>
+        <Literal>hasTechnology (Object property): the technology used in edge computing applications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTemperatureRange</IRI>
+        <Literal>hasTemperatureRange (Data property): an industrial oven for a production line that is heated to a very precise temperature range, between 500F and 510F</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTimeLimit</IRI>
+        <Literal>hasTimeLimit (Data property): A firmware program reads the D0 value of the 3V3 pin every 30 seconds, for an application with a  Particle Photon with a single resistor that publishes messages using a Webhook.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTool</IRI>
+        <Literal>hasTool (Object property): a tool used for the implementation of a technology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasValueConnection</IRI>
+        <Literal>hasValueConnection (Data property): if the wire of a Particle Photon is connected, the Photon sends the value “1”</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_SecuritySolution</IRI>
+        <Literal>has_SecuritySolution (Object property): defines the best practices based on Blockchain solutions for edge security problems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#heat</IRI>
+        <Literal>heat (Object property): RTD sensors provide heat for the oven</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isApplied</IRI>
+        <Literal>isApplied (Object property): a tool used for computer clusters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isConnectedBy</IRI>
+        <Literal>isConnectedBy (Object property): modules with sensors or actuators connect processing boards with smart products</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isIdentified</IRI>
+        <Literal>isIdentified (Object property): passive things are identified by protocols such as NFC tags, optical tags, BLE, RFID tag, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isManagedBy</IRI>
+        <Literal>isManagedBy (Object property): Smart products are managed using Web technologies and software platforms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOf</IRI>
+        <Literal>isPartOf (Object property):  PLC/SCADA is part of ICS (Industrial Control Systems)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isProcessed</IRI>
+        <Literal>isProcessed (Object property): the big data relies on distributed processing and storing, data analytics, and machine learning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRepresentationOf</IRI>
+        <Literal>isRepresentationOf (Object property): A digital twin from the cloud is a software representation of a smart product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isToolFor</IRI>
+        <Literal>isToolFor (Object property): tool for distributed computing technologies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isUsedBy</IRI>
+        <Literal>isUsedBy (Object property): a tool used by a particular technology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#languages_tools</IRI>
+        <Literal>languages_tools (Data property): tools and programming languages used by hardware platforms like PLC and Raspberry Pi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#login</IRI>
+        <Literal>login (Object property): In a wireless sensor network, a mobile node logins with a password using a gateway and Publish-Subscribe service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#manages</IRI>
+        <Literal>manages (Object property): Gateways manage the data from multiple devices and send them to the cloud</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#operating_system</IRI>
+        <Literal>operating_system (Data property): operating systems used by Raspberry Pi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#provideHeat</IRI>
+        <Literal>provideHeat (Data property): the RTD sensors provide heat between  -200 and 600 °C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#read</IRI>
+        <Literal>read (Object property): A firmware program reads the D0 value of the 3V3 pin, in an application with a  Particle Photon that publishes messages using a Webhook.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#regulationTemperature</IRI>
+        <Literal>regulationTemperature (Object property): regulation of the RTD sensors’ temperature for an industrial oven</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#request</IRI>
+        <Literal>request (Object property): Particle cloud service will forward messages with values “1” and “0” to Thingspeak as a subscriber. A Webhook (a new HTTP request to Thingspeak) will result after passing values to the Particle cloud.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#requires</IRI>
+        <Literal>requires (Object property): Applications with Big Data require Big data capabilities - distributed processing and storing, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#send</IRI>
+        <Literal>send (Object property): A firmware program that reads the D0 value every 30 seconds, calls the function Particle.publish() with one of the values “0” or “1” that is sent to the Particle cloud.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supporting_tool</IRI>
+        <Literal>supporting_tool (Object property): tools for edge computing applications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#threats_to_data_security</IRI>
+        <Literal>threats_to_data_security (Object property): SCADA protocols require adequately defending against data security threats.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#useAlgorithm</IRI>
+        <Literal>useAlgorithm (Object property): algorithms used in data centers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#useProgramming</IRI>
+        <Literal>useProgramming (Object property): defines the programming model used by tools for computer clusters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wire</IRI>
+        <Literal>wire (Object property): When the wire of a Particle Photon is connected, the Photon will send the value “1”, but if the wire is disconnected, the Photon will send the value “0”.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
