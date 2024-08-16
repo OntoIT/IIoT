@@ -1,3 +1,3 @@
-Network layer of IIoT ontology
+Network layer of the IIoT architecture
 
-The Network class is defined as an aggregation of two components: data transmission and computer architecture.
+The Network class has two instances: Data_transmission.owl and Computer_architecture.owl.
