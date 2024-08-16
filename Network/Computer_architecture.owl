@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://tudorliv.github.io/IIoT/Network/Computer_architecture"
+     xml:base="https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://tudorliv.github.io/IIoT/Network/Computer_architecture"
-     versionIRI="https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl">
-    <Prefix name="" IRI="https://w3id.org/IIoT/"/>
+     ontologyIRI="https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl">
+    <Prefix name="" IRI="https://tudorliv.github.io/IIoT/Network/Computer_architecture"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -15,7 +14,7 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
-        <IRI>http://creativecommons.org/licenses/by/2.0/</IRI>
+        <IRI>http://creativecommons.org/licenses/by/1.0/</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
@@ -43,19 +42,19 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
-        <Literal xml:lang="en">The Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Device, Application. Network, Support, Capabilities</Literal>
+        <Literal xml:lang="en">&quot;Computer architecture&quot; and  &quot;Data transmission&quot; are components of the Network layer in the IIoT taxonomy.</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-        <Literal xml:lang="en">2023-08-27</Literal>
+        <Literal xml:lang="en">2024-08-15</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal xml:lang="en">2024-07-29</Literal>
+        <Literal xml:lang="en">2024-08-16</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-        <Literal xml:lang="en">Ontology for Industrial Internet of Things systems</Literal>
+        <Literal xml:lang="en">Ontology for computer architecture</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
@@ -63,15 +62,12 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="preferredNamespacePrefix"/>
-        <Literal xml:lang="en">iiot</Literal>
+        <Literal xml:lang="en">computer_architecture</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="preferredNamespaceUri"/>
-        <IRI>https://w3id.org/iiot-#</IRI>
+        <IRI></IRI>
     </Annotation>
-    <Declaration>
-        <Class IRI="#Computer_architecture"/>
-    </Declaration>
     <Declaration>
         <Class IRI="#Computer_cluster"/>
     </Declaration>
@@ -516,26 +512,6 @@
     <Declaration>
         <AnnotationProperty IRI="preferredNamespaceUri"/>
     </Declaration>
-    <SubClassOf>
-        <Class IRI="#Computer_cluster"/>
-        <Class IRI="#Computer_architecture"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Hub"/>
-        <Class IRI="#Computer_architecture"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Network_card"/>
-        <Class IRI="#Computer_architecture"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Router"/>
-        <Class IRI="#Computer_architecture"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Switch"/>
-        <Class IRI="#Computer_architecture"/>
-    </SubClassOf>
     <ClassAssertion>
         <Class IRI="#Computer_cluster"/>
         <NamedIndividual IRI="#Cluster1"/>
@@ -1230,7 +1206,8 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
-        <Literal>IIoT is a semantic ontology for the Internet of Things systems that consists of a hierarchy of classes corresponding to the layers of a general IoT architecture: Device, Network, Support, Application, and Capabilities.</Literal>
+        <Literal>Computer architecture is a component of the Network layer.
+Implementation OWL 2 language:Computer architecture.owl is an instance of the Network class.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -1321,11 +1298,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Computational_cost</IRI>
         <Literal>Computational_cost (Individual): of type Edge security with Object property assertions: has_SecuritySolution, best_Practices</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Computer_architecture</IRI>
-        <Literal>The Network class is defined as an aggregation of the three components: data transmission, control engineering, and computer architecture.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

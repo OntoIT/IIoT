@@ -5,9 +5,8 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://tudorliv.github.io/IIoT/Network/Data_transmission.owl"
-     versionIRI="https://tudorliv.github.io/IIoT/Network/Data_transmission.owl">
-    <Prefix name="" IRI="https://w3id.org/IIoT/"/>
+     ontologyIRI="https://tudorliv.github.io/IIoT/Network/Data_transmission.owl">
+    <Prefix name="" IRI="https://tudorliv.github.io/IIoT/Network/Data_transmission.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -15,7 +14,7 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
-        <IRI>http://creativecommons.org/licenses/by/2.0/</IRI>
+        <IRI>http://creativecommons.org/licenses/by/1.0/</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
@@ -43,19 +42,19 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
-        <Literal xml:lang="en">The Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Device, Application. Network, Support, Capabilities</Literal>
+        <Literal xml:lang="en">&quot;Data transmission&quot; and &quot;Computer architecture&quot; are components of the Network layer in the IIoT taxonomy.</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-        <Literal xml:lang="en">2023-08-27</Literal>
+        <Literal xml:lang="en">2024-08-15</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal xml:lang="en">2024-07-29</Literal>
+        <Literal xml:lang="en">2024-08-16</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-        <Literal xml:lang="en">Ontology for Industrial Internet of Things systems</Literal>
+        <Literal xml:lang="en">Ontology for data transmission in IoT networks</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
@@ -63,11 +62,11 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="preferredNamespacePrefix"/>
-        <Literal xml:lang="en">iiot</Literal>
+        <Literal xml:lang="en">data_transmission</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="preferredNamespaceUri"/>
-        <IRI>https://w3id.org/iiot-#</IRI>
+        <IRI></IRI>
     </Annotation>
     <Declaration>
         <Class IRI="Vocabulary"/>
