@@ -1,374 +1,636 @@
-@prefix : <https://w3id.org/IIoT/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/IIoT/> .
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/IIoT/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/IIoT/"
+     versionIRI="IIoT:1.2.">
+    <Prefix name="" IRI="https://w3id.org/IIoT/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <IRI>http://creativecommons.org/licenses/by/2.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0002-0814-2615</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0003-0702-6134</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0003-1562-6922</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0003-2392-7821</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <IRI>https://orcid.org/0000-0001-6788-630X</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <IRI>https://orcid.org/0000-0003-3562-0528</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal xml:lang="en">The Industrial Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Device, Application. Network, and Support.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <Literal xml:lang="en">2024-08-14</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <Literal xml:lang="en">2024-08-17</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal xml:lang="en">Ontology for Industrial Internet of Things systems</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">Version 1.1</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <Literal xml:lang="en">IIoT</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI>https://w3id.org/IIoT-#</IRI>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Application"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Support"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Dealing_with_sensitive_data"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DevelopEdgeSecurity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Lack_security_measure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Protocols_were_layered"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SCADA_hasCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Support_communication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#authentication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#best_Practices"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#challenge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#countermeasure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#data_transfer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#flow_services"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAlgorithm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasElement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFunctionality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProblem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSecurity_problem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTechnology"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTool"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_SecuritySolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#heat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isApplied"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConnectedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIdentified"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isManagedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProcessed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRepresentationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isToolFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUsedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#login"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#read"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#regulationTemperature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#request"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#send"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supporting_tool"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#threats_to_data_security"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#useAlgorithm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#useProgramming"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Application/Particle_photon.owl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Device/Digital_logic.owl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Network/Data_transmission.owl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system.owl"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/page"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Application"/>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Application"/>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Application/Particle_photon.owl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Device/Digital_logic.owl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Network"/>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Network"/>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Network/Data_transmission.owl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Support"/>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system.owl"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCapability"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#useAlgorithm"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#useProgramming"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasService"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#data_transfer"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>IIoT is a semantic ontology for the Internet of Things systems that consists of a hierarchy of classes corresponding to the layers of a general IoT architecture: Device, Network, Support, Application, and Capabilities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>Authors: Liviana N. Tudor, Lecia Barker, Mohammad Q. Azhar, Jorge Guerra, Clark Mousaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/UnitOfMeasure</IRI>
+        <Literal>Class UnitOfMeasure - is imported from the Saref ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Digital_logic.owl</IRI>
+        <Literal>Digital_logic.owl ontology includes terms about hardware platforms, logic, purpose-built devices, and smart products.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Digital_logic.owl</IRI>
+        <Literal>Digital_logic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Digital_logic.owl</IRI>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Digital_logic.owl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl</IRI>
+        <Literal>&quot;Computer architecture&quot; and  &quot;Data transmission&quot; are components of the Network layer in the IIoT taxonomy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl</IRI>
+        <Literal>Computer_architecture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl</IRI>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Data_transmission.owl</IRI>
+        <Literal>Data transmisiion is managed by network protocols (communication protocols) in a computer or telecommunications network, Network protocols form the protocol layer according to OSI levels.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Data_transmission.owl</IRI>
+        <Literal>Data_transmission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Data_transmission.owl</IRI>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Data_transmission.owl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Application</IRI>
+        <Literal>&quot;Application&quot; represents a layer of the IoT architecture. Application layer ontology includes terms regarding uses cases for IIoT systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dealing_with_sensitive_data</IRI>
+        <Literal>Dealing_with_sensitive_data (Object property): SCADA solutions are proper practices for systems dealing with sensitive data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DevelopEdgeSecurity</IRI>
+        <Literal>DevelopEdgeSecurity (Object property): develops solutions for edge applications using Blockchain capabilities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Device</IRI>
+        <Literal>&quot;Device&quot; represents a layer of the IoT architecture that includes terms described by two ontologies: Digital_logic.owl and Sensor_actuator.owl.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Lack_security_measure</IRI>
+        <Literal>Lack_security_measure (Object property): The SCADA common protocols such as Modbus and BACnet lack the built-in security measures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Network</IRI>
+        <Literal>The networking layer concerns data transmission among devices, the types of communications, and some network protocols used in IoT.
+&quot;Network&quot; contains terms described by the ontologies: &quot;Computer_architecture.owl&quot; and &quot;Data_transmission.owl&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Protocols_were_layered</IRI>
+        <Literal>Protocols_were_layered (Object property): SCADA common protocols, such as Modbus and BACnet, were layered into Ethernet and TCP/IP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SCADA_hasCapability</IRI>
+        <Literal>SCADA_hasCapability (Object property): SCADA systems provide  capabilities for industrial systems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Support</IRI>
+        <Literal>&quot;Support&quot; represents a layer of the IoT architecture. The support layer is represented by distributed systems (cloud systems).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Support_communication</IRI>
+        <Literal>Support_communication (Object property): SCADA systems perform communication with industrial systems in distributed architectures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#authentication</IRI>
+        <Literal>authentication (Object property): the MQTT and HTTP bridges use authentication with asymmetric public keys and JSON Web tokens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#best_Practices</IRI>
+        <Literal>best_Practices (Object property): defines the best practices for the edge security problems using Blockchain solutions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#challenge</IRI>
+        <Literal>challenge (Object property): Blockchain technology comes some challenges (problems) to implementation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#countermeasure</IRI>
+        <Literal>countermeasure (Object property): SCADA solutions represent countermeasure against threats generated by SCADA security problems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#data_transfer</IRI>
+        <Literal>data_transfer (Object property): an MQTT protocol transfers data provided by sensors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#flow_services</IRI>
+        <Literal>flow_services: Object property that ensures the flows and services from Particle Photon to the subscriber (Thingspeak)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAlgorithm</IRI>
+        <Literal>hasAlgorithm (Object property): Gateway devices provide real-time analytics or machine learning algorithms, in edge computing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCapability</IRI>
+        <Literal>hasCapability (Object property): tool that provides capabilities for big data processing in distributed systems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasElement</IRI>
+        <Literal>hasElement (Object property): Sensor Andrew - sharing of transducers. There are two types of transducers: sensors and actuators.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFunctionality</IRI>
+        <Literal>hasFunctionality (Object property): a data center offers cloud services (as functionality)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasProblem</IRI>
+        <Literal>hasProblem (Object property): Blockchain technology has some problems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSecurity_problem</IRI>
+        <Literal>hasSecurity_problem (Object property): solutions for security problems in Blockchain technology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasService</IRI>
+        <Literal>hasService (Object property): specifies cloud services provided by data centers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSolution</IRI>
+        <Literal>hasSolution (Object property): solutions for Blockchain problems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTechnology</IRI>
+        <Literal>hasTechnology (Object property): the technology used in edge computing applications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTool</IRI>
+        <Literal>hasTool (Object property): a tool used for the implementation of a technology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_SecuritySolution</IRI>
+        <Literal>has_SecuritySolution (Object property): defines the best practices based on Blockchain solutions for edge security problems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#heat</IRI>
+        <Literal>heat (Object property): RTD sensors provide heat for the oven</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isApplied</IRI>
+        <Literal>isApplied (Object property): a tool used for computer clusters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isConnectedBy</IRI>
+        <Literal>isConnectedBy (Object property): modules with sensors or actuators connect processing boards with smart products</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isIdentified</IRI>
+        <Literal>isIdentified (Object property): passive things are identified by protocols such as NFC tags, optical tags, BLE, RFID tag, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isManagedBy</IRI>
+        <Literal>isManagedBy (Object property): Smart products are managed using Web technologies and software platforms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOf</IRI>
+        <Literal>isPartOf (Object property):  PLC/SCADA is part of ICS (Industrial Control Systems)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isProcessed</IRI>
+        <Literal>isProcessed (Object property): the big data relies on distributed processing and storing, data analytics, and machine learning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRepresentationOf</IRI>
+        <Literal>isRepresentationOf (Object property): A digital twin from the cloud is a software representation of a smart product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isToolFor</IRI>
+        <Literal>isToolFor (Object property): tool for distributed computing technologies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isUsedBy</IRI>
+        <Literal>isUsedBy (Object property): a tool used by a particular technology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#login</IRI>
+        <Literal>login (Object property): In a wireless sensor network, a mobile node logins with a password using a gateway and Publish-Subscribe service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#manages</IRI>
+        <Literal>manages (Object property): Gateways manage the data from multiple devices and send them to the cloud</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#read</IRI>
+        <Literal>read (Object property): A firmware program reads the D0 value of the 3V3 pin, in an application with a  Particle Photon that publishes messages using a Webhook.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#regulationTemperature</IRI>
+        <Literal>regulationTemperature (Object property): regulation of the RTD sensors’ temperature for an industrial oven</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#request</IRI>
+        <Literal>request (Object property): Particle cloud service will forward messages with values “1” and “0” to Thingspeak as a subscriber. A Webhook (a new HTTP request to Thingspeak) will result after passing values to the Particle cloud.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#requires</IRI>
+        <Literal>requires (Object property): Applications with Big Data require Big data capabilities - distributed processing and storing, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#send</IRI>
+        <Literal>send (Object property): A firmware program that reads the D0 value every 30 seconds, calls the function Particle.publish() with one of the values “0” or “1” that is sent to the Particle cloud.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supporting_tool</IRI>
+        <Literal>supporting_tool (Object property): tools for edge computing applications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#threats_to_data_security</IRI>
+        <Literal>threats_to_data_security (Object property): SCADA protocols require adequately defending against data security threats.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#useAlgorithm</IRI>
+        <Literal>useAlgorithm (Object property): algorithms used in data centers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#useProgramming</IRI>
+        <Literal>useProgramming (Object property): defines the programming model used by tools for computer clusters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wire</IRI>
+        <Literal>wire (Object property): When the wire of a Particle Photon is connected, the Photon will send the value “1”, but if the wire is disconnected, the Photon will send the value “0”.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
-<https://w3id.org/IIoT/> rdf:type owl:Ontology ;
-                          owl:versionIRI <IIoT:1.1.> ;
-                          <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/2.0/> ;
-                          <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-0814-2615> ,
-                                                                 <https://orcid.org/0000-0003-0702-6134> ,
-                                                                 <https://orcid.org/0000-0003-1562-6922> ,
-                                                                 <https://orcid.org/0000-0003-2392-7821> ;
-                          <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-6788-630X> ,
-                                                             <https://orcid.org/0000-0003-3562-0528> ;
-                          <http://purl.org/dc/terms/description> "The Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Device, Application. Network, Support, Capabilities"@en ;
-                          <http://purl.org/dc/terms/issued> "2023-08-27"@en ;
-                          <http://purl.org/dc/terms/modified> "2024-07-29"@en ;
-                          <http://purl.org/dc/terms/title> "Ontology for Industrial Internet of Things systems"@en ;
-                          owl:versionInfo "Version 1.1"@en ;
-                          :preferredNamespacePrefix "iiot"@en ;
-                          :preferredNamespaceUri <https://w3id.org/iiot-#> .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://creativecommons.org/ns#license
-<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/contributor
-<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/creator
-<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/issued
-<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/modified
-<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/title
-<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/IIoT/preferredNamespacePrefix
-:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/IIoT/preferredNamespaceUri
-:preferredNamespaceUri rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  https://w3id.org/IIoT/#Dealing_with_sensitive_data
-<https://w3id.org/IIoT/#Dealing_with_sensitive_data> rdf:type owl:ObjectProperty ;
-                                                     rdfs:comment "Dealing_with_sensitive_data (Object property): SCADA solutions are proper practices for systems dealing with sensitive data" .
-
-
-###  https://w3id.org/IIoT/#DevelopEdgeSecurity
-<https://w3id.org/IIoT/#DevelopEdgeSecurity> rdf:type owl:ObjectProperty ;
-                                             rdfs:comment "DevelopEdgeSecurity (Object property): develops solutions for edge applications using Blockchain capabilities" .
-
-
-###  https://w3id.org/IIoT/#Lack_security_measure
-<https://w3id.org/IIoT/#Lack_security_measure> rdf:type owl:ObjectProperty ;
-                                               rdfs:comment "Lack_security_measure (Object property): The SCADA common protocols such as Modbus and BACnet lack the built-in security measures" .
-
-
-###  https://w3id.org/IIoT/#Protocols_were_layered
-<https://w3id.org/IIoT/#Protocols_were_layered> rdf:type owl:ObjectProperty ;
-                                                rdfs:comment "Protocols_were_layered (Object property): SCADA common protocols, such as Modbus and BACnet, were layered into Ethernet and TCP/IP" .
-
-
-###  https://w3id.org/IIoT/#SCADA_hasCapability
-<https://w3id.org/IIoT/#SCADA_hasCapability> rdf:type owl:ObjectProperty ;
-                                             rdfs:comment "SCADA_hasCapability (Object property): SCADA systems provide  capabilities for industrial systems" .
-
-
-###  https://w3id.org/IIoT/#Support_communication
-<https://w3id.org/IIoT/#Support_communication> rdf:type owl:ObjectProperty ;
-                                               rdfs:comment "Support_communication (Object property): SCADA systems perform communication with industrial systems in distributed architectures" .
-
-
-###  https://w3id.org/IIoT/#authentication
-<https://w3id.org/IIoT/#authentication> rdf:type owl:ObjectProperty ;
-                                        rdfs:comment "authentication (Object property): the MQTT and HTTP bridges use authentication with asymmetric public keys and JSON Web tokens" .
-
-
-###  https://w3id.org/IIoT/#best_Practices
-<https://w3id.org/IIoT/#best_Practices> rdf:type owl:ObjectProperty ;
-                                        rdfs:comment "best_Practices (Object property): defines the best practices for the edge security problems using Blockchain solutions" .
-
-
-###  https://w3id.org/IIoT/#challenge
-<https://w3id.org/IIoT/#challenge> rdf:type owl:ObjectProperty ;
-                                   rdfs:comment "challenge (Object property): Blockchain technology comes some challenges (problems) to implementation" .
-
-
-###  https://w3id.org/IIoT/#countermeasure
-<https://w3id.org/IIoT/#countermeasure> rdf:type owl:ObjectProperty ;
-                                        rdfs:comment "countermeasure (Object property): SCADA solutions represent countermeasure against threats generated by SCADA security problems" .
-
-
-###  https://w3id.org/IIoT/#data_transfer
-<https://w3id.org/IIoT/#data_transfer> rdf:type owl:ObjectProperty ;
-                                       rdfs:range <https://w3id.org/IIoT/#Device> ;
-                                       rdfs:comment "data_transfer (Object property): an MQTT protocol transfers data provided by sensors" .
-
-
-###  https://w3id.org/IIoT/#flow_services
-<https://w3id.org/IIoT/#flow_services> rdf:type owl:ObjectProperty ;
-                                       rdfs:comment "flow_services: Object property that ensures the flows and services from Particle Photon to the subscriber (Thingspeak)" .
-
-
-###  https://w3id.org/IIoT/#hasAlgorithm
-<https://w3id.org/IIoT/#hasAlgorithm> rdf:type owl:ObjectProperty ;
-                                      rdfs:comment "hasAlgorithm (Object property): Gateway devices provide real-time analytics or machine learning algorithms, in edge computing" .
-
-
-###  https://w3id.org/IIoT/#hasCapability
-<https://w3id.org/IIoT/#hasCapability> rdf:type owl:ObjectProperty ;
-                                       rdfs:subPropertyOf owl:topObjectProperty ;
-                                       rdfs:comment "hasCapability (Object property): tool that provides capabilities for big data processing in distributed systems" .
-
-
-###  https://w3id.org/IIoT/#hasElement
-<https://w3id.org/IIoT/#hasElement> rdf:type owl:ObjectProperty ;
-                                    rdfs:comment "hasElement (Object property): Sensor Andrew - sharing of transducers. There are two types of transducers: sensors and actuators." .
-
-
-###  https://w3id.org/IIoT/#hasFunctionality
-<https://w3id.org/IIoT/#hasFunctionality> rdf:type owl:ObjectProperty ;
-                                          rdfs:comment "hasFunctionality (Object property): a data center offers cloud services (as functionality)" .
-
-
-###  https://w3id.org/IIoT/#hasProblem
-<https://w3id.org/IIoT/#hasProblem> rdf:type owl:ObjectProperty ;
-                                    rdfs:comment "hasProblem (Object property): Blockchain technology has some problems" .
-
-
-###  https://w3id.org/IIoT/#hasSecurity_problem
-<https://w3id.org/IIoT/#hasSecurity_problem> rdf:type owl:ObjectProperty ;
-                                             rdfs:comment "hasSecurity_problem (Object property): solutions for security problems in Blockchain technology" .
-
-
-###  https://w3id.org/IIoT/#hasService
-<https://w3id.org/IIoT/#hasService> rdf:type owl:ObjectProperty ,
-                                             owl:FunctionalProperty ;
-                                    rdfs:comment "hasService (Object property): specifies cloud services provided by data centers" .
-
-
-###  https://w3id.org/IIoT/#hasSolution
-<https://w3id.org/IIoT/#hasSolution> rdf:type owl:ObjectProperty ;
-                                     rdfs:comment "hasSolution (Object property): solutions for Blockchain problems" .
-
-
-###  https://w3id.org/IIoT/#hasTechnology
-<https://w3id.org/IIoT/#hasTechnology> rdf:type owl:ObjectProperty ;
-                                       rdfs:comment "hasTechnology (Object property): the technology used in edge computing applications" .
-
-
-###  https://w3id.org/IIoT/#hasTool
-<https://w3id.org/IIoT/#hasTool> rdf:type owl:ObjectProperty ;
-                                 rdfs:comment "hasTool (Object property): a tool used for the implementation of a technology" .
-
-
-###  https://w3id.org/IIoT/#has_SecuritySolution
-<https://w3id.org/IIoT/#has_SecuritySolution> rdf:type owl:ObjectProperty ;
-                                              rdfs:comment "has_SecuritySolution (Object property): defines the best practices based on Blockchain solutions for edge security problems" .
-
-
-###  https://w3id.org/IIoT/#heat
-<https://w3id.org/IIoT/#heat> rdf:type owl:ObjectProperty ;
-                              rdfs:comment "heat (Object property): RTD sensors provide heat for the oven" .
-
-
-###  https://w3id.org/IIoT/#isApplied
-<https://w3id.org/IIoT/#isApplied> rdf:type owl:ObjectProperty ;
-                                   rdfs:comment "isApplied (Object property): a tool used for computer clusters" .
-
-
-###  https://w3id.org/IIoT/#isConnectedBy
-<https://w3id.org/IIoT/#isConnectedBy> rdf:type owl:ObjectProperty ;
-                                       rdfs:comment "isConnectedBy (Object property): modules with sensors or actuators connect processing boards with smart products" .
-
-
-###  https://w3id.org/IIoT/#isIdentified
-<https://w3id.org/IIoT/#isIdentified> rdf:type owl:ObjectProperty ;
-                                      rdfs:comment "isIdentified (Object property): passive things are identified by protocols such as NFC tags, optical tags, BLE, RFID tag, etc." .
-
-
-###  https://w3id.org/IIoT/#isManagedBy
-<https://w3id.org/IIoT/#isManagedBy> rdf:type owl:ObjectProperty ;
-                                     rdfs:comment "isManagedBy (Object property): Smart products are managed using Web technologies and software platforms." .
-
-
-###  https://w3id.org/IIoT/#isPartOf
-<https://w3id.org/IIoT/#isPartOf> rdf:type owl:ObjectProperty ;
-                                  rdfs:comment "isPartOf (Object property):  PLC/SCADA is part of ICS (Industrial Control Systems)" .
-
-
-###  https://w3id.org/IIoT/#isProcessed
-<https://w3id.org/IIoT/#isProcessed> rdf:type owl:ObjectProperty ;
-                                     rdfs:comment "isProcessed (Object property): the big data relies on distributed processing and storing, data analytics, and machine learning" .
-
-
-###  https://w3id.org/IIoT/#isRepresentationOf
-<https://w3id.org/IIoT/#isRepresentationOf> rdf:type owl:ObjectProperty ;
-                                            rdfs:comment "isRepresentationOf (Object property): A digital twin from the cloud is a software representation of a smart product" .
-
-
-###  https://w3id.org/IIoT/#isToolFor
-<https://w3id.org/IIoT/#isToolFor> rdf:type owl:ObjectProperty ;
-                                   rdfs:comment "isToolFor (Object property): tool for distributed computing technologies" .
-
-
-###  https://w3id.org/IIoT/#isUsedBy
-<https://w3id.org/IIoT/#isUsedBy> rdf:type owl:ObjectProperty ;
-                                  rdfs:comment "isUsedBy (Object property): a tool used by a particular technology" .
-
-
-###  https://w3id.org/IIoT/#login
-<https://w3id.org/IIoT/#login> rdf:type owl:ObjectProperty ;
-                               rdfs:comment "login (Object property): In a wireless sensor network, a mobile node logins with a password using a gateway and Publish-Subscribe service." .
-
-
-###  https://w3id.org/IIoT/#manages
-<https://w3id.org/IIoT/#manages> rdf:type owl:ObjectProperty ;
-                                 rdfs:comment "manages (Object property): Gateways manage the data from multiple devices and send them to the cloud" .
-
-
-###  https://w3id.org/IIoT/#read
-<https://w3id.org/IIoT/#read> rdf:type owl:ObjectProperty ;
-                              rdfs:comment "read (Object property): A firmware program reads the D0 value of the 3V3 pin, in an application with a  Particle Photon that publishes messages using a Webhook." .
-
-
-###  https://w3id.org/IIoT/#regulationTemperature
-<https://w3id.org/IIoT/#regulationTemperature> rdf:type owl:ObjectProperty ;
-                                               rdfs:comment "regulationTemperature (Object property): regulation of the RTD sensors’ temperature for an industrial oven" .
-
-
-###  https://w3id.org/IIoT/#request
-<https://w3id.org/IIoT/#request> rdf:type owl:ObjectProperty ;
-                                 rdfs:comment "request (Object property): Particle cloud service will forward messages with values “1” and “0” to Thingspeak as a subscriber. A Webhook (a new HTTP request to Thingspeak) will result after passing values to the Particle cloud." .
-
-
-###  https://w3id.org/IIoT/#requires
-<https://w3id.org/IIoT/#requires> rdf:type owl:ObjectProperty ;
-                                  rdfs:comment "requires (Object property): Applications with Big Data require Big data capabilities - distributed processing and storing, etc." .
-
-
-###  https://w3id.org/IIoT/#send
-<https://w3id.org/IIoT/#send> rdf:type owl:ObjectProperty ;
-                              rdfs:comment "send (Object property): A firmware program that reads the D0 value every 30 seconds, calls the function Particle.publish() with one of the values “0” or “1” that is sent to the Particle cloud." .
-
-
-###  https://w3id.org/IIoT/#supporting_tool
-<https://w3id.org/IIoT/#supporting_tool> rdf:type owl:ObjectProperty ;
-                                         rdfs:comment "supporting_tool (Object property): tools for edge computing applications" .
-
-
-###  https://w3id.org/IIoT/#threats_to_data_security
-<https://w3id.org/IIoT/#threats_to_data_security> rdf:type owl:ObjectProperty ;
-                                                  rdfs:comment "threats_to_data_security (Object property): SCADA protocols require adequately defending against data security threats." .
-
-
-###  https://w3id.org/IIoT/#useAlgorithm
-<https://w3id.org/IIoT/#useAlgorithm> rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf owl:topObjectProperty ;
-                                      rdfs:comment "useAlgorithm (Object property): algorithms used in data centers" .
-
-
-###  https://w3id.org/IIoT/#useProgramming
-<https://w3id.org/IIoT/#useProgramming> rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf owl:topObjectProperty ;
-                                        rdfs:comment "useProgramming (Object property): defines the programming model used by tools for computer clusters" .
-
-
-###  https://w3id.org/IIoT/#wire
-<https://w3id.org/IIoT/#wire> rdf:type owl:ObjectProperty ;
-                              rdfs:comment "wire (Object property): When the wire of a Particle Photon is connected, the Photon will send the value “1”, but if the wire is disconnected, the Photon will send the value “0”." .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  https://w3id.org/IIoT/#Application
-<https://w3id.org/IIoT/#Application> rdf:type owl:Class ;
-                                     rdfs:comment "\"Application\" represents a layer of the IoT architecture. Application layer ontology includes terms regarding Blockchain technology, SCADA systems, and security issues in cloud and edge computing." .
-
-
-###  https://w3id.org/IIoT/#Device
-<https://w3id.org/IIoT/#Device> rdf:type owl:Class ;
-                                rdfs:comment "\"Device\" represents a layer of the IoT architecture. The device layer includes hardware platforms, connected products, technologies, tools, and functionalities." .
-
-
-###  https://w3id.org/IIoT/#Network
-<https://w3id.org/IIoT/#Network> rdf:type owl:Class ;
-                                 rdfs:comment "The networking layer concerns data transmission among devices, the types of communications, and some network protocols used in IoT." .
-
-
-###  https://w3id.org/IIoT/#Support
-<https://w3id.org/IIoT/#Support> rdf:type owl:Class ;
-                                 rdfs:comment "\"Support\" represents a layer of the IoT architecture. The support layer is represented by distributed systems (cloud systems)." .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl
-<https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl> rdf:type owl:NamedIndividual ,
-                                                                           <https://w3id.org/IIoT/#Application> .
-
-
-###  https://tudorliv.github.io/IIoT/Application/Particle_photon.owl
-<https://tudorliv.github.io/IIoT/Application/Particle_photon.owl> rdf:type owl:NamedIndividual ,
-                                                                           <https://w3id.org/IIoT/#Application> .
-
-
-###  https://tudorliv.github.io/IIoT/Device/Digital_logic.owl
-<https://tudorliv.github.io/IIoT/Device/Digital_logic.owl> rdf:type owl:NamedIndividual ,
-                                                                    <https://w3id.org/IIoT/#Device> .
-
-
-###  https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl
-<https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl> rdf:type owl:NamedIndividual ,
-                                                                      <https://w3id.org/IIoT/#Device> .
-
-
-###  https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl
-<https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl> rdf:type owl:NamedIndividual ,
-                                                                             <https://w3id.org/IIoT/#Network> .
-
-
-###  https://tudorliv.github.io/IIoT/Network/Data_transmission.owl
-<https://tudorliv.github.io/IIoT/Network/Data_transmission.owl> rdf:type owl:NamedIndividual ,
-                                                                         <https://w3id.org/IIoT/#Network> .
-
-
-###  https://tudorliv.github.io/IIoT/Support/Distributed_system.owl
-<https://tudorliv.github.io/IIoT/Support/Distributed_system.owl> rdf:type owl:NamedIndividual ,
-                                                                          <https://w3id.org/IIoT/#Support> .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-owl:Thing rdfs:comment "IIoT is a semantic ontology for the Internet of Things systems that consists of a hierarchy of classes corresponding to the layers of a general IoT architecture: Device, Network, Support, Application, and Capabilities." ;
-          rdfs:seeAlso "Authors: Liviana N. Tudor, Lecia Barker, Mohammad Q. Azhar, Jorge Guerra, Clark Mousaw" .
-
-
-<https://saref.etsi.org/core/UnitOfMeasure> rdfs:comment "Class UnitOfMeasure - is imported from the Saref ontology" .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
