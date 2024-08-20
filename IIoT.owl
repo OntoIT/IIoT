@@ -51,7 +51,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal xml:lang="en">2024-08-17</Literal>
+        <Literal xml:lang="en">2024-08-20</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
@@ -80,141 +80,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Support"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Dealing_with_sensitive_data"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#DevelopEdgeSecurity"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Lack_security_measure"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Protocols_were_layered"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#SCADA_hasCapability"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Support_communication"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#authentication"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#best_Practices"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#challenge"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#countermeasure"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#data_transfer"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#flow_services"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasAlgorithm"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasCapability"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasElement"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasFunctionality"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasProblem"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSecurity_problem"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasService"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSolution"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTechnology"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTool"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_SecuritySolution"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#heat"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isApplied"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isConnectedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isIdentified"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isManagedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isPartOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isProcessed"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isRepresentationOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isToolFor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isUsedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#login"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#manages"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#read"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#regulationTemperature"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#request"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#requires"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#send"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#supporting_tool"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#threats_to_data_security"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#useAlgorithm"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#useProgramming"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#wire"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl"/>
@@ -298,25 +163,6 @@
         <Class IRI="#Support"/>
         <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system.owl"/>
     </ClassAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasCapability"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#useAlgorithm"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#useProgramming"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasService"/>
-    </FunctionalObjectProperty>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#data_transfer"/>
-        <Class IRI="#Device"/>
-    </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
@@ -326,6 +172,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
         <Literal>Authors: Liviana N. Tudor, Lecia Barker, Mohammad Q. Azhar, Jorge Guerra, Clark Mousaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/page"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <IRI>https://tudorliv.github.io/IIoT/</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="preferredNamespaceUri"/>
@@ -351,6 +202,22 @@
         <AnnotationProperty IRI="preferredNamespaceUri"/>
         <IRI>https://tudorliv.github.io/IIoT/Device/Digital_logic.owl</IRI>
         <IRI>https://tudorliv.github.io/IIoT/Device/Digital_logic.owl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl</IRI>
+        <Literal>The modules with sensors or actuators connect processing boards to computers and other devices. Unlike simple sensors, actuators can make changes in the environment.
+Sensor_actuaator.owl ontology is an instance of the &quot;Device&quot; class in the main ontology, IIoT.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl</IRI>
+        <Literal>Sensor_actuator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl</IRI>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
@@ -383,29 +250,29 @@
         <IRI>https://tudorliv.github.io/IIoT/Network/Data_transmission.owl</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system.owl</IRI>
+        <Literal>Authors: Liviana N. Tudor, Lecia Barker, Ghislain Atemezing, Mohammad Q. Azhar, Jorge Guerra, Clark Mousaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system.owl</IRI>
+        <Literal>Distributed_system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system.owl</IRI>
+        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system.owl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Application</IRI>
         <Literal>&quot;Application&quot; represents a layer of the IoT architecture. Application layer ontology includes terms regarding uses cases for IIoT systems.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Dealing_with_sensitive_data</IRI>
-        <Literal>Dealing_with_sensitive_data (Object property): SCADA solutions are proper practices for systems dealing with sensitive data</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#DevelopEdgeSecurity</IRI>
-        <Literal>DevelopEdgeSecurity (Object property): develops solutions for edge applications using Blockchain capabilities</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Device</IRI>
         <Literal>&quot;Device&quot; represents a layer of the IoT architecture that includes terms described by two ontologies: Digital_logic.owl and Sensor_actuator.owl.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Lack_security_measure</IRI>
-        <Literal>Lack_security_measure (Object property): The SCADA common protocols such as Modbus and BACnet lack the built-in security measures</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -415,218 +282,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Protocols_were_layered</IRI>
-        <Literal>Protocols_were_layered (Object property): SCADA common protocols, such as Modbus and BACnet, were layered into Ethernet and TCP/IP</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#SCADA_hasCapability</IRI>
-        <Literal>SCADA_hasCapability (Object property): SCADA systems provide  capabilities for industrial systems</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Support</IRI>
         <Literal>&quot;Support&quot; represents a layer of the IoT architecture. The support layer is represented by distributed systems (cloud systems).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Support_communication</IRI>
-        <Literal>Support_communication (Object property): SCADA systems perform communication with industrial systems in distributed architectures</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#authentication</IRI>
-        <Literal>authentication (Object property): the MQTT and HTTP bridges use authentication with asymmetric public keys and JSON Web tokens</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#best_Practices</IRI>
-        <Literal>best_Practices (Object property): defines the best practices for the edge security problems using Blockchain solutions</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#challenge</IRI>
-        <Literal>challenge (Object property): Blockchain technology comes some challenges (problems) to implementation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#countermeasure</IRI>
-        <Literal>countermeasure (Object property): SCADA solutions represent countermeasure against threats generated by SCADA security problems</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#data_transfer</IRI>
-        <Literal>data_transfer (Object property): an MQTT protocol transfers data provided by sensors</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#flow_services</IRI>
-        <Literal>flow_services: Object property that ensures the flows and services from Particle Photon to the subscriber (Thingspeak)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasAlgorithm</IRI>
-        <Literal>hasAlgorithm (Object property): Gateway devices provide real-time analytics or machine learning algorithms, in edge computing</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasCapability</IRI>
-        <Literal>hasCapability (Object property): tool that provides capabilities for big data processing in distributed systems</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasElement</IRI>
-        <Literal>hasElement (Object property): Sensor Andrew - sharing of transducers. There are two types of transducers: sensors and actuators.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasFunctionality</IRI>
-        <Literal>hasFunctionality (Object property): a data center offers cloud services (as functionality)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasProblem</IRI>
-        <Literal>hasProblem (Object property): Blockchain technology has some problems</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasSecurity_problem</IRI>
-        <Literal>hasSecurity_problem (Object property): solutions for security problems in Blockchain technology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasService</IRI>
-        <Literal>hasService (Object property): specifies cloud services provided by data centers</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasSolution</IRI>
-        <Literal>hasSolution (Object property): solutions for Blockchain problems</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasTechnology</IRI>
-        <Literal>hasTechnology (Object property): the technology used in edge computing applications</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasTool</IRI>
-        <Literal>hasTool (Object property): a tool used for the implementation of a technology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#has_SecuritySolution</IRI>
-        <Literal>has_SecuritySolution (Object property): defines the best practices based on Blockchain solutions for edge security problems</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#heat</IRI>
-        <Literal>heat (Object property): RTD sensors provide heat for the oven</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isApplied</IRI>
-        <Literal>isApplied (Object property): a tool used for computer clusters</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isConnectedBy</IRI>
-        <Literal>isConnectedBy (Object property): modules with sensors or actuators connect processing boards with smart products</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isIdentified</IRI>
-        <Literal>isIdentified (Object property): passive things are identified by protocols such as NFC tags, optical tags, BLE, RFID tag, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isManagedBy</IRI>
-        <Literal>isManagedBy (Object property): Smart products are managed using Web technologies and software platforms.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isPartOf</IRI>
-        <Literal>isPartOf (Object property):  PLC/SCADA is part of ICS (Industrial Control Systems)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isProcessed</IRI>
-        <Literal>isProcessed (Object property): the big data relies on distributed processing and storing, data analytics, and machine learning</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isRepresentationOf</IRI>
-        <Literal>isRepresentationOf (Object property): A digital twin from the cloud is a software representation of a smart product</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isToolFor</IRI>
-        <Literal>isToolFor (Object property): tool for distributed computing technologies</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isUsedBy</IRI>
-        <Literal>isUsedBy (Object property): a tool used by a particular technology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#login</IRI>
-        <Literal>login (Object property): In a wireless sensor network, a mobile node logins with a password using a gateway and Publish-Subscribe service.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#manages</IRI>
-        <Literal>manages (Object property): Gateways manage the data from multiple devices and send them to the cloud</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#read</IRI>
-        <Literal>read (Object property): A firmware program reads the D0 value of the 3V3 pin, in an application with a  Particle Photon that publishes messages using a Webhook.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#regulationTemperature</IRI>
-        <Literal>regulationTemperature (Object property): regulation of the RTD sensors’ temperature for an industrial oven</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#request</IRI>
-        <Literal>request (Object property): Particle cloud service will forward messages with values “1” and “0” to Thingspeak as a subscriber. A Webhook (a new HTTP request to Thingspeak) will result after passing values to the Particle cloud.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#requires</IRI>
-        <Literal>requires (Object property): Applications with Big Data require Big data capabilities - distributed processing and storing, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#send</IRI>
-        <Literal>send (Object property): A firmware program that reads the D0 value every 30 seconds, calls the function Particle.publish() with one of the values “0” or “1” that is sent to the Particle cloud.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#supporting_tool</IRI>
-        <Literal>supporting_tool (Object property): tools for edge computing applications</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#threats_to_data_security</IRI>
-        <Literal>threats_to_data_security (Object property): SCADA protocols require adequately defending against data security threats.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#useAlgorithm</IRI>
-        <Literal>useAlgorithm (Object property): algorithms used in data centers</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#useProgramming</IRI>
-        <Literal>useProgramming (Object property): defines the programming model used by tools for computer clusters</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#wire</IRI>
-        <Literal>wire (Object property): When the wire of a Particle Photon is connected, the Photon will send the value “1”, but if the wire is disconnected, the Photon will send the value “0”.</Literal>
     </AnnotationAssertion>
 </Ontology>
 
