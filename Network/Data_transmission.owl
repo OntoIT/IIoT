@@ -50,11 +50,11 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal xml:lang="en">2024-08-16</Literal>
+        <Literal xml:lang="en">2024-08-20</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-        <Literal xml:lang="en">Ontology for data transmission in IoT networks</Literal>
+        <Literal xml:lang="en">Ontology for data transmission in Industrial IoT</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
@@ -132,15 +132,6 @@
         <Class IRI="https://tudorliv.github.io/IIoT/Network/Data_transmission/5G_technology"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#authentication"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#data_transfer"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isIdentified"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
     </Declaration>
     <Declaration>
@@ -174,41 +165,17 @@
         <Class IRI="#BLE"/>
         <Class IRI="https://tudorliv.github.io/IIoT/Network/Data_transmission/Bluetooth"/>
     </EquivalentClasses>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#authentication"/>
-        <Class IRI="#MQTT"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#data_transfer"/>
-        <Class IRI="#MQTT"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isIdentified"/>
-        <Class IRI="#BLE"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isIdentified"/>
-        <Class IRI="#NFC_tag"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isIdentified"/>
-        <Class IRI="#Optical_tag"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isIdentified"/>
-        <Class IRI="#RFID_tag"/>
-    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>Authors: Liviana N. Tudor, Lecia Barker, Ghislain Atemezing, Mohammad Q. Azhar, Jorge Guerra, Clark Mousaw</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
         <Literal>Data_transmission is a component of the Network layer.
 Implementation in OWL 2 language: Data_transmission.owl is an instance of the Network class.
 Data transmisiion is managed by network protocols (communication protocols) in a computer or telecommunications network. Network protocols form the protocol layer according to OSI levels.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
-        <Literal>Authors: Liviana N. Tudor, Lecia Barker, Mohammad Q. Azhar, Jorge Guerra, Clark Mousaw</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="preferredNamespaceUri"/>
@@ -294,21 +261,6 @@ Data transmisiion is managed by network protocols (communication protocols) in a
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XMPP</IRI>
         <Literal>XMPP (Extensible Messaging and Presence Protocol) is an open standard that offers support for middleware applications, invisible messaging with the TCP network layer (hides the details of messaging), voice and video calls, collaboration, and generalized routing of XML data.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#authentication</IRI>
-        <Literal>authentication (Object property): the MQTT and HTTP bridges use authentication with asymmetric public keys and JSON Web tokens</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#data_transfer</IRI>
-        <Literal>data_transfer (Object property): an MQTT protocol transfers data provided by sensors</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isIdentified</IRI>
-        <Literal>isIdentified (Object property): passive things are identified by protocols such as NFC tags, optical tags, BLE, RFID tag, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
