@@ -1,0 +1,470 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="IndOv" IRI="https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <IRI>http://creativecommons.org/licenses/by/2.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0002-0814-2615</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0003-0702-6134</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0003-1562-6922</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0003-2392-7821</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <IRI>https://orcid.org/0000-0001-6788-630X</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <IRI>https://orcid.org/0000-0003-3562-0528</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal xml:lang="en">The Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Device, Application. Network, Support, Capabilities</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <Literal xml:lang="en">2024-09-11</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <Literal xml:lang="en">2024-09-13</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal xml:lang="en">Ontology for Industrial ovens</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">Version 1.1</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <Literal xml:lang="en">iiot</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI></IRI>
+    </Annotation>
+    <Declaration>
+        <Class IRI="Vocabulary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Industrial_oven"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RTD_sensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#heat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#regulationTemperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAccuracy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTemperatureRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#provideHeat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oven1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oven2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oven3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oven4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oven5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RTD3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RTD4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RTD5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RTDsensor1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RTDsensor2"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/iND_OVEN"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Industrial_oven"/>
+        <NamedIndividual IRI="#Oven1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Industrial_oven"/>
+        <NamedIndividual IRI="#Oven2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Industrial_oven"/>
+        <NamedIndividual IRI="#Oven3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Industrial_oven"/>
+        <NamedIndividual IRI="#Oven4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Industrial_oven"/>
+        <NamedIndividual IRI="#Oven5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RTD_sensor"/>
+        <NamedIndividual IRI="#RTD3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RTD_sensor"/>
+        <NamedIndividual IRI="#RTD4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RTD_sensor"/>
+        <NamedIndividual IRI="#RTD5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RTD_sensor"/>
+        <NamedIndividual IRI="#RTDsensor1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RTD_sensor"/>
+        <NamedIndividual IRI="#RTDsensor2"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#heat"/>
+        <NamedIndividual IRI="#RTD3"/>
+        <NamedIndividual IRI="#Oven3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#heat"/>
+        <NamedIndividual IRI="#RTD4"/>
+        <NamedIndividual IRI="#Oven4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#heat"/>
+        <NamedIndividual IRI="#RTD5"/>
+        <NamedIndividual IRI="#Oven5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#heat"/>
+        <NamedIndividual IRI="#RTDsensor1"/>
+        <NamedIndividual IRI="#Oven1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#heat"/>
+        <NamedIndividual IRI="#RTDsensor2"/>
+        <NamedIndividual IRI="#Oven2"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Oven1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">508.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Oven2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">502.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Oven3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">501.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Oven4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">506.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAccuracy"/>
+        <NamedIndividual IRI="#RTD3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provideHeat"/>
+        <NamedIndividual IRI="#RTD3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">510.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAccuracy"/>
+        <NamedIndividual IRI="#RTD4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provideHeat"/>
+        <NamedIndividual IRI="#RTD4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">520.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAccuracy"/>
+        <NamedIndividual IRI="#RTDsensor1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provideHeat"/>
+        <NamedIndividual IRI="#RTDsensor1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">480.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAccuracy"/>
+        <NamedIndividual IRI="#RTDsensor2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provideHeat"/>
+        <NamedIndividual IRI="#RTDsensor2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">500.0</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#heat"/>
+        <Class IRI="#RTD_sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#regulationTemperature"/>
+        <Class IRI="#RTD_sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#heat"/>
+        <Class IRI="#Industrial_oven"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#regulationTemperature"/>
+        <Class IRI="#Industrial_oven"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAccuracy"/>
+        <Class IRI="#RTD_sensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAccuracy"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasAccuracy"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:float"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.1</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <Class IRI="#Industrial_oven"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasTemperatureRange"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:double"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">500.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">510.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#provideHeat"/>
+        <Class IRI="#RTD_sensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#provideHeat"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#provideHeat"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:double"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-200.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">600.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAccuracy"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#provideHeat"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>Industrial_oven.owl ontology defines terms about the regulation of the sensors’ temperature within an industrial oven for a production line.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>Authors: Liviana N. Tudor, Lecia Barker, Mohammad Q. Azhar, Jorge Guerra, Clark Mousaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/UnitOfMeasure</IRI>
+        <Literal>Class UnitOfMeasure - is imported from the Saref ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Industrial_oven</IRI>
+        <Literal>Industrial ovens for a production line incorporate temperature sensors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Oven1</IRI>
+        <Literal>Oven1 (Individual): an Industrial_oven with Data property assertions (hasTemperatureRange)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Oven2</IRI>
+        <Literal>Oven2 (Individual): an Industrial_oven with Data property assertions (hasTemperatureRange)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Oven3</IRI>
+        <Literal>Oven3 (Individual): an Industrial_oven with Data property assertions (hasTemperatureRange)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Oven4</IRI>
+        <Literal>Oven4 (Individual): an Industrial_oven with Data property assertions (hasTemperatureRange)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Oven5</IRI>
+        <Literal>Oven5 (Individual): an Industrial_oven</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RTD3</IRI>
+        <Literal>RTD3 (Individual): a RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RTD4</IRI>
+        <Literal>RTD4 (Individual): a RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RTD5</IRI>
+        <Literal>RTD5 (Individual): a RTD_sensor with Object property assertions (heat)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RTD_sensor</IRI>
+        <Literal>An industrial oven is heated to a very precise temperature range and the Resistance Temperature Detector (RTD) sensors should be accurate within the required temperature range.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RTDsensor1</IRI>
+        <Literal>RTDsensor1 (Individual): a RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RTDsensor2</IRI>
+        <Literal>RTDsensor2 (Individual): a RTD_sensor with Object property assertions (heat), Data property assertions (provideHeat, hasAccuracy)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAccuracy</IRI>
+        <Literal>hasAccuracy (Data property): the accuracy provided by RTD sensors is between 0.1 and 1 °C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTemperatureRange</IRI>
+        <Literal>hasTemperatureRange (Data property): an industrial oven for a production line that is heated to a very precise temperature range, between 500F and 510F</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#heat</IRI>
+        <Literal>heat (Object property): RTD sensors provide heat for the oven</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#provideHeat</IRI>
+        <Literal>provideHeat (Data property): the RTD sensors provide heat between  -200 and 600 °C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#regulationTemperature</IRI>
+        <Literal>regulationTemperature (Object property): regulation of the RTD sensors’ temperature for an industrial oven</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
