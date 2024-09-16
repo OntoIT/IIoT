@@ -17,7 +17,7 @@
                                                              <https://orcid.org/0000-0003-3562-0528> ;
                           <http://purl.org/dc/terms/description> "The Industrial Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Device, Application. Network, and Support."@en ;
                           <http://purl.org/dc/terms/issued> "2024-08-14"@en ;
-                          <http://purl.org/dc/terms/modified> "2024-08-20"@en ;
+                          <http://purl.org/dc/terms/modified> "2024-09-16"@en ;
                           <http://purl.org/dc/terms/title> "Ontology for Industrial Internet of Things systems"@en ;
                           owl:versionInfo "Version 1.1"@en ;
                           :preferredNamespacePrefix "IIoT"@en ;
@@ -63,6 +63,10 @@
 <http://xmlns.com/foaf/0.1/page> rdf:type owl:AnnotationProperty .
 
 
+###  https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl/SENSOR
+<https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl/SENSOR> rdf:type owl:AnnotationProperty .
+
+
 ###  https://w3id.org/IIoT/preferredNamespacePrefix
 :preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 
@@ -102,12 +106,18 @@
 
 ###  https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl
 <https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl> rdf:type owl:NamedIndividual ,
-                                                                           <https://w3id.org/IIoT/#Application> .
+                                                                           <https://w3id.org/IIoT/#Application> ;
+                                                                  <http://purl.org/dc/elements/1.1/description> "Industrial_oven.owl ontology includes terms about the regulation of the sensors’ temperature within an industrial oven for a production line." ;
+                                                                  :preferredNamespacePrefix "Industrial_oven" ;
+                                                                  :preferredNamespaceUri <https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl> .
 
 
 ###  https://tudorliv.github.io/IIoT/Application/Particle_photon.owl
 <https://tudorliv.github.io/IIoT/Application/Particle_photon.owl> rdf:type owl:NamedIndividual ,
-                                                                           <https://w3id.org/IIoT/#Application> .
+                                                                           <https://w3id.org/IIoT/#Application> ;
+                                                                  <http://purl.org/dc/elements/1.1/description> "Particle_photon.owl ontology includes terms about the use case for publishing messages in a Particle Photon device..Particle Photon is a complete hardware kit with a powerful microcontroller, a Wi-Fi chip, and a free cloud service for building IoT applications." ;
+                                                                  :preferredNamespacePrefix "Particle_photon" ;
+                                                                  :preferredNamespaceUri <https://tudorliv.github.io/IIoT/Application/Particle_photon.owl> .
 
 
 ###  https://tudorliv.github.io/IIoT/Device/Digital_logic.owl
