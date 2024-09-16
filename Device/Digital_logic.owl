@@ -30,7 +30,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal xml:lang="en">2024-08-20</Literal>
+        <Literal xml:lang="en">2024-09-2</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
@@ -85,9 +85,6 @@
         <Class IRI="#Firmware"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Flow"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Gateway"/>
     </Declaration>
     <Declaration>
@@ -98,9 +95,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ICS"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Industrial"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Industrial_oven"/>
@@ -203,11 +197,11 @@
     </Declaration>
     <SubClassOf>
         <Class IRI="#Adapter"/>
-        <Class IRI="#Gateway"/>
+        <Class IRI="#Hardware_Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Arduino"/>
-        <Class IRI="#Microcontroller"/>
+        <Class IRI="#Hardware_Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#C"/>
@@ -242,10 +236,6 @@
         <Class IRI="#Algorithm"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Flow"/>
-        <Class IRI="#Particle_Photon"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Gateway"/>
         <Class IRI="#Hardware_Platform"/>
     </SubClassOf>
@@ -255,15 +245,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ICS"/>
-        <Class IRI="#Industrial"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Industrial"/>
-        <Class IRI="#Control_System"/>
+        <Class IRI="#Purpose-built_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Industrial_oven"/>
-        <Class IRI="#Industrial"/>
+        <Class IRI="#Purpose-built_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#JSON_Web_Token"/>
@@ -287,7 +273,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Microprocessor_Platform"/>
-        <Class IRI="#Gateway"/>
+        <Class IRI="#Hardware_Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Oil_Pipeline_Control"/>
@@ -295,15 +281,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PLC"/>
-        <Class IRI="#Industrial"/>
+        <Class IRI="#Purpose-built_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Particle_Photon"/>
-        <Class IRI="#Microcontroller"/>
+        <Class IRI="#Hardware_Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Particle_cloud"/>
-        <Class IRI="#Particle_Photon"/>
+        <Class IRI="#Hardware_Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Passive_things"/>
@@ -315,11 +301,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Raspberry_Pi"/>
-        <Class IRI="#Microcontroller"/>
+        <Class IRI="#Hardware_Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Smartphone"/>
-        <Class IRI="#Gateway"/>
+        <Class IRI="#Hardware_Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#XML"/>
@@ -414,11 +400,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Flow</IRI>
-        <Literal>Flow describes the Flow-Service-Quality semantics for a Particle Photon application that includes a Thingspeak subscriber, a WebHook, and a firmware program.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Gateway</IRI>
         <Literal>Gateways process the data from multiple devices and send them to the cloud</Literal>
     </AnnotationAssertion>
@@ -436,11 +417,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ICS</IRI>
         <Literal>ICS (industrial control systems)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Industrial</IRI>
-        <Literal>Examples of industrial control systems: industrial control systems (ICS), manufacturing processes, power grids, oil and gas pipelines, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
