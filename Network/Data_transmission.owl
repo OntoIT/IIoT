@@ -50,7 +50,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal xml:lang="en">2024-08-20</Literal>
+        <Literal xml:lang="en">2024-09-2</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
@@ -263,18 +263,10 @@ Data transmisiion is managed by network protocols (communication protocols) in a
         <Literal>XMPP (Extensible Messaging and Presence Protocol) is an open standard that offers support for middleware applications, invisible messaging with the TCP network layer (hides the details of messaging), voice and video calls, collaboration, and generalized routing of XML data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/page"/>
         <IRI>https://tudorliv.github.io/IIoT/Network/Data_transmission/5G_technology</IRI>
         <Literal>https://en.wikipedia.org/wiki/5G</Literal>
     </AnnotationAssertion>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/page"/>
-        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/page"/>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-    </SubAnnotationPropertyOf>
 </Ontology>
 
 
