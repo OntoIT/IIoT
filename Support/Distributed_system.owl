@@ -31,7 +31,7 @@ The &quot;Support&quot; layer is represented by distributed systems known as “
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal xml:lang="en">2024-08-20</Literal>
+        <Literal xml:lang="en">2024-09-2</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
@@ -252,10 +252,6 @@ The &quot;Support&quot; layer is represented by distributed systems known as “
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/UnitOfMeasure"/>
-        <Class IRI="#Technology_tool"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Analytics"/>
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
@@ -309,7 +305,7 @@ The &quot;Support&quot; layer is represented by distributed systems known as “
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IaaS"/>
-        <Class IRI="#Cloud_service"/>
+        <Class IRI="#Cloud"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Kafka"/>
@@ -337,11 +333,11 @@ The &quot;Support&quot; layer is represented by distributed systems known as “
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PaaS"/>
-        <Class IRI="#Cloud_service"/>
+        <Class IRI="#Cloud"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SaaS"/>
-        <Class IRI="#Cloud_service"/>
+        <Class IRI="#Cloud"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Spark"/>
