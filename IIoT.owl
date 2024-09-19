@@ -67,7 +67,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="preferredNamespaceUri"/>
-        <IRI>https://w3id.org/IIoT-#</IRI>
+        <IRI>https://w3id.org/IIoT</IRI>
     </Annotation>
     <Declaration>
         <Class IRI="#Application"/>
