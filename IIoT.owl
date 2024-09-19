@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/IIoT/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/IIoT/"
+     versionIRI="IIoT:1.2.">
+    <Prefix name="" IRI="https://w3id.org/IIoT/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <IRI>http://creativecommons.org/licenses/by/2.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0002-0814-2615</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0003-0702-6134</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0003-1562-6922</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://orcid.org/0000-0003-2392-7821</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <IRI>https://orcid.org/0000-0001-6788-630X</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <IRI>https://orcid.org/0000-0003-3562-0528</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal xml:lang="en">The Industrial Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Device, Application. Network, and Support.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <Literal xml:lang="en">2024-08-14</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <Literal xml:lang="en">2024-09-16</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal xml:lang="en">Ontology for Industrial Internet of Things systems</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">Version 1.2</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <Literal xml:lang="en">IIoT</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI>https://w3id.org/IIoT-#</IRI>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Application"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Support"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Application/Particle_photon.owl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Device/Digital_logic.owl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Network/Data_transmission.owl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system.owl"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/page"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl/SENSOR"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Application"/>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Application"/>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Application/Particle_photon.owl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Device/Digital_logic.owl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Network"/>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Network"/>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Network/Data_transmission.owl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Support"/>
+        <NamedIndividual IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system.owl"/>
+    </ClassAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>IIoT is a semantic ontology for the Internet of Things systems that consists of a hierarchy of classes corresponding to the layers of a general IoT architecture: Device, Network, Support, Application, and Capabilities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>Authors: Liviana N. Tudor, Lecia Barker, Mohammad Q. Azhar, Jorge Guerra, Clark Mousaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/page"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <IRI>https://tudorliv.github.io/IIoT/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/UnitOfMeasure</IRI>
+        <Literal>Class UnitOfMeasure - is imported from the Saref ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl</IRI>
+        <Literal>Industrial_oven.owl ontology includes terms about the regulation of the sensors’ temperature within an industrial oven for a production line.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <IRI>https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl</IRI>
+        <Literal>Industrial_oven</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI>https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl</IRI>
+        <IRI>https://tudorliv.github.io/IIoT/Application/Industrial_oven.owl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://tudorliv.github.io/IIoT/Application/Particle_photon.owl</IRI>
+        <Literal>Particle_photon.owl ontology includes terms about the use case for publishing messages in a Particle Photon device..Particle Photon is a complete hardware kit with a powerful microcontroller, a Wi-Fi chip, and a free cloud service for building IoT applications.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <IRI>https://tudorliv.github.io/IIoT/Application/Particle_photon.owl</IRI>
+        <Literal>Particle_photon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI>https://tudorliv.github.io/IIoT/Application/Particle_photon.owl</IRI>
+        <IRI>https://tudorliv.github.io/IIoT/Application/Particle_photon.owl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Digital_logic.owl</IRI>
+        <Literal>Digital_logic.owl ontology includes terms about hardware platforms, logic, purpose-built devices, and smart products.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Digital_logic.owl</IRI>
+        <Literal>Digital_logic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Digital_logic.owl</IRI>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Digital_logic.owl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl</IRI>
+        <Literal>The modules with sensors or actuators connect processing boards to computers and other devices. Unlike simple sensors, actuators can make changes in the environment.
+Sensor_actuaator.owl ontology is an instance of the &quot;Device&quot; class in the main ontology, IIoT.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl</IRI>
+        <Literal>Sensor_actuator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl</IRI>
+        <IRI>https://tudorliv.github.io/IIoT/Device/Sensor_actuator.owl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl</IRI>
+        <Literal>&quot;Computer architecture&quot; and  &quot;Data transmission&quot; are components of the Network layer in the IIoT taxonomy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl</IRI>
+        <Literal>Computer_architecture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl</IRI>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Computer_architecture.owl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Data_transmission.owl</IRI>
+        <Literal>Data transmisiion is managed by network protocols (communication protocols) in a computer or telecommunications network, Network protocols form the protocol layer according to OSI levels.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Data_transmission.owl</IRI>
+        <Literal>Data_transmission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Data_transmission.owl</IRI>
+        <IRI>https://tudorliv.github.io/IIoT/Network/Data_transmission.owl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system.owl</IRI>
+        <Literal>Authors: Liviana N. Tudor, Lecia Barker, Ghislain Atemezing, Mohammad Q. Azhar, Jorge Guerra, Clark Mousaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespacePrefix"/>
+        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system.owl</IRI>
+        <Literal>Distributed_system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="preferredNamespaceUri"/>
+        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system.owl</IRI>
+        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system.owl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Application</IRI>
+        <Literal>&quot;Application&quot; represents a layer of the IoT architecture. Application layer ontology includes terms regarding uses cases for IIoT systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Device</IRI>
+        <Literal>&quot;Device&quot; represents a layer of the IoT architecture that includes terms described by two ontologies: Digital_logic.owl and Sensor_actuator.owl.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Network</IRI>
+        <Literal>The networking layer concerns data transmission among devices, the types of communications, and some network protocols used in IoT.
+&quot;Network&quot; contains terms described by the ontologies: &quot;Computer_architecture.owl&quot; and &quot;Data_transmission.owl&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Support</IRI>
+        <Literal>&quot;Support&quot; represents a layer of the IoT architecture. The support layer is represented by distributed systems (cloud systems).</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
