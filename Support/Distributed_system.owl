@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://tudorliv.github.io/IIoT/Support/Distributed_system.owl"
+     xml:base="https://OntoIT.github.io/IIoT/Support/Distributed_system.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://tudorliv.github.io/IIoT/Support/Distributed_system.owl">
-    <Prefix name="" IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system.owl"/>
+     ontologyIRI="https://OntoIT.github.io/IIoT/Support/Distributed_system.owl">
+    <Prefix name="" IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -31,7 +31,7 @@ The &quot;Support&quot; layer is represented by distributed systems known as “
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal xml:lang="en">2024-09-2</Literal>
+        <Literal xml:lang="en">2024-09-19</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
@@ -50,31 +50,13 @@ The &quot;Support&quot; layer is represented by distributed systems known as “
         <IRI></IRI>
     </Annotation>
     <Declaration>
-        <Class IRI="https://saref.etsi.org/core/Currency"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://saref.etsi.org/core/EnergyUnit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://saref.etsi.org/core/IlluminanceUnit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://saref.etsi.org/core/PowerUnit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://saref.etsi.org/core/PressureUnit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://saref.etsi.org/core/TemperatureUnit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Big_data"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Big_data"/>
     </Declaration>
     <Declaration>
         <Class IRI="Vocabulary"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/UnitOfMeasure"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/UnitOfMeasure"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Analytics"/>
@@ -158,43 +140,61 @@ The &quot;Support&quot; layer is represented by distributed systems known as “
         <Class IRI="#Watson_IoT"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Cloud_gaming"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Cloud_gaming"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Hadoop"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Hadoop"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/MapReduce"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/MapReduce"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Micro_data_center"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Micro_data_center"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/ModBus"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/ModBus"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/OPC_server"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/OPC_server"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Paxos"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Paxos"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Smart_contract"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Smart_contract"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Smart_grid"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Smart_grid"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Smart_home"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Smart_home"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Tensor_flow"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Tensor_flow"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Theano"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Theano"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Zookeeper"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Zookeeper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://saref.etsi.org/core/Currency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://saref.etsi.org/core/EnergyUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://saref.etsi.org/core/IlluminanceUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://saref.etsi.org/core/PowerUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://saref.etsi.org/core/PressureUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://saref.etsi.org/core/TemperatureUnit"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
@@ -224,31 +224,7 @@ The &quot;Support&quot; layer is represented by distributed systems known as “
         <AnnotationProperty IRI="preferredNamespaceUri"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="https://saref.etsi.org/core/Currency"/>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/UnitOfMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://saref.etsi.org/core/EnergyUnit"/>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/UnitOfMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://saref.etsi.org/core/IlluminanceUnit"/>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/UnitOfMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://saref.etsi.org/core/PowerUnit"/>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/UnitOfMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://saref.etsi.org/core/PressureUnit"/>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/UnitOfMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://saref.etsi.org/core/TemperatureUnit"/>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/UnitOfMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Big_data"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Big_data"/>
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
     <SubClassOf>
@@ -352,56 +328,80 @@ The &quot;Support&quot; layer is represented by distributed systems known as “
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Cloud_gaming"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Cloud_gaming"/>
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Hadoop"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Hadoop"/>
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/MapReduce"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/MapReduce"/>
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Micro_data_center"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Micro_data_center"/>
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/ModBus"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/ModBus"/>
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/OPC_server"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/OPC_server"/>
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Paxos"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Paxos"/>
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Smart_contract"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Smart_contract"/>
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Smart_grid"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Smart_grid"/>
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Smart_home"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Smart_home"/>
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Tensor_flow"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Tensor_flow"/>
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Theano"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Theano"/>
         <Class IRI="#Technology_tool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Support/Distributed_system/Zookeeper"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/Distributed_system/Zookeeper"/>
         <Class IRI="#Technology_tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://saref.etsi.org/core/Currency"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/UnitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://saref.etsi.org/core/EnergyUnit"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/UnitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://saref.etsi.org/core/IlluminanceUnit"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/UnitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://saref.etsi.org/core/PowerUnit"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/UnitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://saref.etsi.org/core/PressureUnit"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/UnitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://saref.etsi.org/core/TemperatureUnit"/>
+        <Class IRI="https://OntoIT.github.io/IIoT/Support/UnitOfMeasure"/>
     </SubClassOf>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
@@ -420,82 +420,17 @@ The &quot;Support&quot; layer is represented by distributed systems known as “
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://saref.etsi.org/core/Currency</IRI>
-        <Literal xml:lang="en">The class of units of measure for price</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://saref.etsi.org/core/Currency</IRI>
-        <Literal xml:lang="en">Currency</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://saref.etsi.org/core/EnergyUnit</IRI>
-        <Literal xml:lang="en">The unit of measure for energy</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://saref.etsi.org/core/EnergyUnit</IRI>
-        <Literal xml:lang="en">Energy unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://saref.etsi.org/core/IlluminanceUnit</IRI>
-        <Literal xml:lang="en">The unit of measure for light</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://saref.etsi.org/core/IlluminanceUnit</IRI>
-        <Literal xml:lang="en">Illuminance unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://saref.etsi.org/core/PowerUnit</IRI>
-        <Literal xml:lang="en">The unit of measure for power</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://saref.etsi.org/core/PowerUnit</IRI>
-        <Literal xml:lang="en">Power unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://saref.etsi.org/core/PressureUnit</IRI>
-        <Literal xml:lang="en">The unit of measure for pressure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://saref.etsi.org/core/PressureUnit</IRI>
-        <Literal xml:lang="en">Pressure unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://saref.etsi.org/core/TemperatureUnit</IRI>
-        <Literal xml:lang="en">The unit of measure for temperature</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://saref.etsi.org/core/TemperatureUnit</IRI>
-        <Literal xml:lang="en">Temperature unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://saref.etsi.org/core/UnitOfMeasure</IRI>
-        <Literal>Class UnitOfMeasure - is imported from the Saref ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/Big_data</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/Big_data</IRI>
         <Literal>Big data can be stored using NoSQL and relational databases, data warehouses, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/UnitOfMeasure</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/UnitOfMeasure</IRI>
         <Literal xml:lang="en">The unit of measure is a standard for measurement of a quantity, such as a Property. For example,  Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called &quot;watt&quot;. Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/UnitOfMeasure</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/UnitOfMeasure</IRI>
         <Literal xml:lang="en">Unit of measure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -640,72 +575,137 @@ The &quot;Support&quot; layer is represented by distributed systems known as “
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system/Cloud_gaming</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/Distributed_system/Cloud_gaming</IRI>
         <Literal>Cloud_gaming is:an Edge application</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system/Hadoop</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/Distributed_system/Hadoop</IRI>
         <Literal>Hadoop system contains Apache Spark that allows big data processing and building machine learning models such as regression, classification, clustering, and recommendation systems in a distributed processing environment.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system/MapReduce</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/Distributed_system/MapReduce</IRI>
         <Literal>MapReduce is a technology of processing for big data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system/Micro_data_center</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/Distributed_system/Micro_data_center</IRI>
         <Literal>Micro_data_center is an edge technology used in the data centers</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system/ModBus</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/Distributed_system/ModBus</IRI>
         <Literal>Modbus (Individual): a SCADA common protocol with Object property assertions (Lack_security_measure, Protocols_were_layered)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system/OPC_server</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/Distributed_system/OPC_server</IRI>
         <Literal>OPC server is used as an edge technology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system/Paxos</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/Distributed_system/Paxos</IRI>
         <Literal>Paxos is used in data centers</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system/Smart_contract</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/Distributed_system/Smart_contract</IRI>
         <Literal>Smart contract is used in Blockchain</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system/Smart_grid</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/Distributed_system/Smart_grid</IRI>
         <Literal>Smart_grid is:used for Edge applications</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system/Smart_home</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/Distributed_system/Smart_home</IRI>
         <Literal>Smart_home is:an Edge application</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system/Tensor_flow</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/Distributed_system/Tensor_flow</IRI>
         <Literal>Tensor flow is a tool for Deep learning algorithms</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system/Theano</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/Distributed_system/Theano</IRI>
         <Literal>Theano is a tool used for Deep learning algorithms</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Support/Distributed_system/Zookeeper</IRI>
+        <IRI>https://OntoIT.github.io/IIoT/Support/Distributed_system/Zookeeper</IRI>
         <Literal>Zookeeper is applied in Data centers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/Currency</IRI>
+        <Literal xml:lang="en">The class of units of measure for price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://saref.etsi.org/core/Currency</IRI>
+        <Literal xml:lang="en">Currency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/EnergyUnit</IRI>
+        <Literal xml:lang="en">The unit of measure for energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://saref.etsi.org/core/EnergyUnit</IRI>
+        <Literal xml:lang="en">Energy unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/IlluminanceUnit</IRI>
+        <Literal xml:lang="en">The unit of measure for light</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://saref.etsi.org/core/IlluminanceUnit</IRI>
+        <Literal xml:lang="en">Illuminance unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/PowerUnit</IRI>
+        <Literal xml:lang="en">The unit of measure for power</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://saref.etsi.org/core/PowerUnit</IRI>
+        <Literal xml:lang="en">Power unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/PressureUnit</IRI>
+        <Literal xml:lang="en">The unit of measure for pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://saref.etsi.org/core/PressureUnit</IRI>
+        <Literal xml:lang="en">Pressure unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/TemperatureUnit</IRI>
+        <Literal xml:lang="en">The unit of measure for temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://saref.etsi.org/core/TemperatureUnit</IRI>
+        <Literal xml:lang="en">Temperature unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://saref.etsi.org/core/UnitOfMeasure</IRI>
+        <Literal>Class UnitOfMeasure - is imported from the Saref ontology</Literal>
     </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
