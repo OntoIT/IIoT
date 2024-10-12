@@ -93,12 +93,6 @@
         <Class IRI="https://saref.etsi.org/core/TemperatureUnit"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Application/Use_Case1"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://tudorliv.github.io/IIoT/Application/Use_Case2"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="https://tudorliv.github.io/IIoT/capabilities/Operating_system"/>
     </Declaration>
     <Declaration>
@@ -393,6 +387,12 @@
         <Class IRI="#UDP"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Use_Case1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Use_Case2"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#WPAN"/>
     </Declaration>
     <Declaration>
@@ -553,9 +553,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Power_supply"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#RAM"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#disconnect_timeout"/>
@@ -869,14 +866,6 @@
         <Class IRI="UnitOfMeasure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Application/Use_Case1"/>
-        <Class IRI="#Application"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://tudorliv.github.io/IIoT/Application/Use_Case2"/>
-        <Class IRI="#Application"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="https://tudorliv.github.io/IIoT/capabilities/Operating_system"/>
         <Class IRI="#Digital_logic"/>
     </SubClassOf>
@@ -1005,8 +994,16 @@
         <Class IRI="#Digital_logic"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Firmware"/>
+        <Class IRI="#Use_Case1"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Flow"/>
         <Class IRI="#Digital_logic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flow"/>
+        <Class IRI="#Use_Case1"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Gateway"/>
@@ -1059,6 +1056,10 @@
     <SubClassOf>
         <Class IRI="#Industrial_oven"/>
         <Class IRI="#Digital_logic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Industrial_oven"/>
+        <Class IRI="#Use_Case2"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#JSON_Web_Token"/>
@@ -1157,8 +1158,16 @@
         <Class IRI="#Digital_logic"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Particle_Photon"/>
+        <Class IRI="#Use_Case1"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Particle_cloud"/>
         <Class IRI="#Digital_logic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Particle_cloud"/>
+        <Class IRI="#Use_Case1"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Passive_things"/>
@@ -1187,6 +1196,10 @@
     <SubClassOf>
         <Class IRI="#RTD_sensor"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RTD_sensor"/>
+        <Class IRI="#Use_Case2"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Raspberry_Pi"/>
@@ -1233,6 +1246,10 @@
         <Class IRI="#Distributed_system"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Subscriber"/>
+        <Class IRI="#Use_Case1"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Switch"/>
         <Class IRI="#Computer_architecture"/>
     </SubClassOf>
@@ -1247,6 +1264,14 @@
     <SubClassOf>
         <Class IRI="#UDP"/>
         <Class IRI="#Data_transmission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Use_Case1"/>
+        <Class IRI="#Application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Use_Case2"/>
+        <Class IRI="#Application"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WPAN"/>
@@ -2075,10 +2100,6 @@
         </DataSomeValuesFrom>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#RAM"/>
-        <Class IRI="#Raspberyy_Pi_4B"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#disconnect_timeout"/>
         <Class IRI="#Wireless_sensor_network"/>
     </DataPropertyDomain>
@@ -2280,10 +2301,6 @@
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#RAM"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#disconnect_timeout"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
@@ -2399,17 +2416,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>https://saref.etsi.org/core/UnitOfMeasure</IRI>
         <Literal>Class UnitOfMeasure - is imported from the Saref ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Application/Use_Case1</IRI>
-        <Literal>Use case 1 contains terms about publishing messages in a Particle Photon device.
-Particle photon is a complete hardware kit with a powerful microcontroller, a Wi-Fi chip, and a free cloud service for building smart connected products.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://tudorliv.github.io/IIoT/Application/Use_Case2</IRI>
-        <Literal>Use_case2 contains terms about the regulation of the sensors’ temperature within an industrial oven for a production line. The industrial oven is heated to a very precise temperature range and the Resistance Temperature Detector (RTD) sensors should be accurate within the required temperature range.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3108,11 +3114,6 @@ Particle photon is a complete hardware kit with a powerful microcontroller, a Wi
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#RAM</IRI>
-        <Literal>RAM (Data property): setting up Raspberry Pi 4 Model B requires at least 2GB RAM for use as a desktop computer</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#RFID_tag</IRI>
         <Literal>RFID tags (Radio Frequency Identification) are used as hardware transmitters to nearby portable electronic devices, for identifying passive things.</Literal>
     </AnnotationAssertion>
@@ -3325,6 +3326,17 @@ Particle photon is a complete hardware kit with a powerful microcontroller, a Wi
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#UDP</IRI>
         <Literal>UDP (User Datagram Protocol) corresponds to the Transport layer of the Internet protocol suite TCP/IP. UDP ensures the delivery of messages over a network, but unlike the TCP protocol, information packets are generally sent without receipt confirmation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Use_Case1</IRI>
+        <Literal>Use case 1 contains terms about publishing messages in a Particle Photon device.
+Particle photon is a complete hardware kit with a powerful microcontroller, a Wi-Fi chip, and a free cloud service for building smart connected products.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Use_Case2</IRI>
+        <Literal>Use_case2 contains terms about the regulation of the sensors’ temperature within an industrial oven for a production line. The industrial oven is heated to a very precise temperature range and the Resistance Temperature Detector (RTD) sensors should be accurate within the required temperature range.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
