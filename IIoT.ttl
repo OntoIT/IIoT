@@ -1,11 +1,9 @@
-@prefix : <https://w3id.org/IIoT#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix :iiot: <https://w3id.org/IIoT#> .
-@base <https://w3id.org/IIoT> .
+@prefix iiot: <https://w3id.org/IIoT#> .
 
 <https://w3id.org/IIoT> rdf:type owl:Ontology ;
                          <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/2.0/> ;
