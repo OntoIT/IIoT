@@ -1,26 +1,27 @@
-@prefix : <https://w3id.org/IIoT/> .
+@prefix : <https://w3id.org/IIoT#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/IIoT/> .
+@prefix :iiot: <https://w3id.org/IIoT#> .
+@base <https://w3id.org/IIoT> .
 
-<https://w3id.org/IIoT/> rdf:type owl:Ontology ;
-                          <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/2.0/> ;
-                          <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-0814-2615> ,
-                                                                 <https://orcid.org/0000-0003-0702-6134> ,
-                                                                 <https://orcid.org/0000-0003-1562-6922> ,
-                                                                 <https://orcid.org/0000-0003-2392-7821> ;
-                          <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-6788-630X> ,
-                                                             <https://orcid.org/0000-0003-3562-0528> ;
-                          <http://purl.org/dc/terms/description> "The Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Device, Application. Network, Support, Capabilities"@en ;
-                          <http://purl.org/dc/terms/issued> "2023-08-27"@en ;
-                          <http://purl.org/dc/terms/modified> "2024-09-11"@en ;
-                          <http://purl.org/dc/terms/title> "Ontology for Industrial Internet of Things systems"@en ;
-                          owl:versionInfo "Version 1.1"@en ;
-                          :preferredNamespacePrefix "iiot"@en ;
-                          :preferredNamespaceUri <https://w3id.org/iiot-#> .
+<https://w3id.org/IIoT> rdf:type owl:Ontology ;
+                         <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/2.0/> ;
+                         <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-0814-2615> ,
+                                                                <https://orcid.org/0000-0003-0702-6134> ,
+                                                                <https://orcid.org/0000-0003-1562-6922> ,
+                                                                <https://orcid.org/0000-0003-2392-7821> ;
+                         <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-6788-630X> ,
+                                                            <https://orcid.org/0000-0003-3562-0528> ;
+                         <http://purl.org/dc/terms/description> "The Internet of Things taxonomy is extended with semantic ontologies for IoT layers: Device, Application. Network, Support, Capabilities"@en ;
+                         <http://purl.org/dc/terms/issued> "2023-08-27"@en ;
+                         <http://purl.org/dc/terms/modified> "2024-09-11"@en ;
+                         <http://purl.org/dc/terms/title> "Ontology for Industrial Internet of Things systems"@en ;
+                         owl:versionInfo "Version 1.1"@en ;
+                         <https://w3id.org/IIoT/preferredNamespacePrefix> "iiot"@en ;
+                         <https://w3id.org/IIoT/preferredNamespaceUri> <https://w3id.org/iiot#> .
 
 #################################################################
 #    Annotation properties
@@ -55,11 +56,11 @@
 
 
 ###  https://w3id.org/IIoT/preferredNamespacePrefix
-:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+<https://w3id.org/IIoT/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/IIoT/preferredNamespaceUri
-:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+<https://w3id.org/IIoT/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -591,42 +592,42 @@
 
 ###  https://saref.etsi.org/core/Currency
 <https://saref.etsi.org/core/Currency> rdf:type owl:Class ;
-                                       rdfs:subClassOf :UnitOfMeasure ;
+                                       rdfs:subClassOf <https://w3id.org/IIoT/UnitOfMeasure> ;
                                        rdfs:comment "The class of units of measure for price"@en ;
                                        rdfs:label "Currency"@en .
 
 
 ###  https://saref.etsi.org/core/EnergyUnit
 <https://saref.etsi.org/core/EnergyUnit> rdf:type owl:Class ;
-                                         rdfs:subClassOf :UnitOfMeasure ;
+                                         rdfs:subClassOf <https://w3id.org/IIoT/UnitOfMeasure> ;
                                          rdfs:comment "The unit of measure for energy"@en ;
                                          rdfs:label "Energy unit"@en .
 
 
 ###  https://saref.etsi.org/core/IlluminanceUnit
 <https://saref.etsi.org/core/IlluminanceUnit> rdf:type owl:Class ;
-                                              rdfs:subClassOf :UnitOfMeasure ;
+                                              rdfs:subClassOf <https://w3id.org/IIoT/UnitOfMeasure> ;
                                               rdfs:comment "The unit of measure for light"@en ;
                                               rdfs:label "Illuminance unit"@en .
 
 
 ###  https://saref.etsi.org/core/PowerUnit
 <https://saref.etsi.org/core/PowerUnit> rdf:type owl:Class ;
-                                        rdfs:subClassOf :UnitOfMeasure ;
+                                        rdfs:subClassOf <https://w3id.org/IIoT/UnitOfMeasure> ;
                                         rdfs:comment "The unit of measure for power"@en ;
                                         rdfs:label "Power unit"@en .
 
 
 ###  https://saref.etsi.org/core/PressureUnit
 <https://saref.etsi.org/core/PressureUnit> rdf:type owl:Class ;
-                                           rdfs:subClassOf :UnitOfMeasure ;
+                                           rdfs:subClassOf <https://w3id.org/IIoT/UnitOfMeasure> ;
                                            rdfs:comment "The unit of measure for pressure"@en ;
                                            rdfs:label "Pressure unit"@en .
 
 
 ###  https://saref.etsi.org/core/TemperatureUnit
 <https://saref.etsi.org/core/TemperatureUnit> rdf:type owl:Class ;
-                                              rdfs:subClassOf :UnitOfMeasure ;
+                                              rdfs:subClassOf <https://w3id.org/IIoT/UnitOfMeasure> ;
                                               rdfs:comment "The unit of measure for temperature"@en ;
                                               rdfs:label "Temperature unit"@en .
 
@@ -639,20 +640,20 @@
 
 
 ###  https://w3id.org/IIoT/Big_data
-:Big_data rdf:type owl:Class ;
-          rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
-          rdfs:comment "Big data can be stored using NoSQL and relational databases, data warehouses, etc." .
+<https://w3id.org/IIoT/Big_data> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://w3id.org/IIoT/#Distributed_system> ;
+                                 rdfs:comment "Big data can be stored using NoSQL and relational databases, data warehouses, etc." .
 
 
 ###  https://w3id.org/IIoT/UnitOfMeasure
-:UnitOfMeasure rdf:type owl:Class ;
-               rdfs:subClassOf <https://w3id.org/IIoT/#Support> ;
-               rdfs:comment "The unit of measure is a standard for measurement of a quantity, such as a Property. For example,  Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM)."@en ;
-               rdfs:label "Unit of measure"@en .
+<https://w3id.org/IIoT/UnitOfMeasure> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/IIoT/#Support> ;
+                                      rdfs:comment "The unit of measure is a standard for measurement of a quantity, such as a Property. For example,  Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM)."@en ;
+                                      rdfs:label "Unit of measure"@en .
 
 
 ###  https://w3id.org/IIoT/Vocabulary
-:Vocabulary rdf:type owl:Class .
+<https://w3id.org/IIoT/Vocabulary> rdf:type owl:Class .
 
 
 ###  https://w3id.org/IIoT/#Adapter
@@ -675,7 +676,8 @@
 
 ###  https://w3id.org/IIoT/#Application
 <https://w3id.org/IIoT/#Application> rdf:type owl:Class ;
-                                     rdfs:comment "\"Application\" represents a layer of the IoT architecture. Application layer ontology includes terms regarding Blockchain technology, SCADA systems, and security issues in cloud and edge computing." .
+                                     rdfs:comment "\"Application\" represents a layer of the IoT architecture. Application layer ontology includes terms regarding Blockchain technology, SCADA systems, and security issues in cloud and edge computing." ;
+                                     rdfs:label "Application"@en .
 
 
 ###  https://w3id.org/IIoT/#Arduino
@@ -794,7 +796,8 @@
 ###  https://w3id.org/IIoT/#Distributed_system
 <https://w3id.org/IIoT/#Distributed_system> rdf:type owl:Class ;
                                             rdfs:subClassOf <https://w3id.org/IIoT/#Support> ;
-                                            rdfs:comment "The support layer is represented by distributed systems known as “cloud systems” that perform communications between devices, data gathering and processing. A distributed system has components located on different  computers from the network that communicate by passing messages." .
+                                            rdfs:comment "The support layer is represented by distributed systems known as “cloud systems” that perform communications between devices, data gathering and processing. A distributed system has components located on different  computers from the network that communicate by passing messages." ;
+                                            rdfs:label "Distributed System"@en .
 
 
 ###  https://w3id.org/IIoT/#Django
@@ -837,14 +840,16 @@
 <https://w3id.org/IIoT/#Firmware> rdf:type owl:Class ;
                                   rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ,
                                                   <https://w3id.org/IIoT/#Use_Case1> ;
-                                  rdfs:comment "In a Particle Photon application, a firmware program reads the value D0 of a pin, call the function Particle.publish() with one of the value “0” or “1” that is sent to the Particle cloud." .
+                                  rdfs:comment "In a Particle Photon application, a firmware program reads the value D0 of a pin, call the function Particle.publish() with one of the value “0” or “1” that is sent to the Particle cloud." ;
+                                  rdfs:label "Firmware" .
 
 
 ###  https://w3id.org/IIoT/#Flow
 <https://w3id.org/IIoT/#Flow> rdf:type owl:Class ;
                               rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ,
                                               <https://w3id.org/IIoT/#Use_Case1> ;
-                              rdfs:comment "Flow describes the Flow-Service-Quality semantics for a Particle Photon application that includes a Thingspeak subscriber, a WebHook, and a firmware program." .
+                              rdfs:comment "Flow describes the Flow-Service-Quality semantics for a Particle Photon application that includes a Thingspeak subscriber, a WebHook, and a firmware program." ;
+                              rdfs:label "Flow"@en .
 
 
 ###  https://w3id.org/IIoT/#Gateway
@@ -923,7 +928,8 @@
 <https://w3id.org/IIoT/#Industrial_oven> rdf:type owl:Class ;
                                          rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ,
                                                          <https://w3id.org/IIoT/#Use_Case2> ;
-                                         rdfs:comment "Industrial ovens for a production line incorporate temperature sensors." .
+                                         rdfs:comment "Industrial ovens for a production line incorporate temperature sensors." ;
+                                         rdfs:label "Industrial Oven"@en .
 
 
 ###  https://w3id.org/IIoT/#JSON_Web_Token
@@ -1074,7 +1080,8 @@
 <https://w3id.org/IIoT/#Particle_Photon> rdf:type owl:Class ;
                                          rdfs:subClassOf <https://w3id.org/IIoT/#Digital_logic> ,
                                                          <https://w3id.org/IIoT/#Use_Case1> ;
-                                         rdfs:comment "Edge-to-cloud platform; Connecting Photon to CMU Wi-Fi; Mini breadboard, USB cable, header" .
+                                         rdfs:comment "Edge-to-cloud platform; Connecting Photon to CMU Wi-Fi; Mini breadboard, USB cable, header" ;
+                                         rdfs:label "Particle Photon"@en .
 
 
 ###  https://w3id.org/IIoT/#Particle_cloud
@@ -1160,7 +1167,8 @@
 ###  https://w3id.org/IIoT/#Sensor_actuator
 <https://w3id.org/IIoT/#Sensor_actuator> rdf:type owl:Class ;
                                          rdfs:subClassOf <https://w3id.org/IIoT/#Device> ;
-                                         rdfs:comment "The modules with sensors or actuators connect processing boards to computers and other devices. Unlike simple sensors, actuators can make changes in the environment." .
+                                         rdfs:comment "The modules with sensors or actuators connect processing boards to computers and other devices. Unlike simple sensors, actuators can make changes in the environment." ;
+                                         rdfs:label "Sensor Actuator"@en .
 
 
 ###  https://w3id.org/IIoT/#Shield
@@ -1227,13 +1235,15 @@
 <https://w3id.org/IIoT/#Use_Case1> rdf:type owl:Class ;
                                    rdfs:subClassOf <https://w3id.org/IIoT/#Application> ;
                                    rdfs:comment """Use case 1 contains terms about publishing messages in a Particle Photon device.
-Particle photon is a complete hardware kit with a powerful microcontroller, a Wi-Fi chip, and a free cloud service for building smart connected products.""" .
+Particle photon is a complete hardware kit with a powerful microcontroller, a Wi-Fi chip, and a free cloud service for building smart connected products.""" ;
+                                   rdfs:label "Use case 1"@en .
 
 
 ###  https://w3id.org/IIoT/#Use_Case2
 <https://w3id.org/IIoT/#Use_Case2> rdf:type owl:Class ;
                                    rdfs:subClassOf <https://w3id.org/IIoT/#Application> ;
-                                   rdfs:comment "Use_case2 contains terms about the regulation of the sensors’ temperature within an industrial oven for a production line. The industrial oven is heated to a very precise temperature range and the Resistance Temperature Detector (RTD) sensors should be accurate within the required temperature range." .
+                                   rdfs:comment "Use_case2 contains terms about the regulation of the sensors’ temperature within an industrial oven for a production line. The industrial oven is heated to a very precise temperature range and the Resistance Temperature Detector (RTD) sensors should be accurate within the required temperature range." ;
+                                   rdfs:label "Use case 2"@en .
 
 
 ###  https://w3id.org/IIoT/#WPAN
@@ -1290,8 +1300,8 @@ A mobile node identifies nearby network nodes and logins using the SAMPL protoco
 #################################################################
 
 ###  https://w3id.org/IIoT/Distributed_authentication
-:Distributed_authentication rdf:type owl:NamedIndividual ;
-                            rdfs:comment "Distributed_authentication (Individual): a Blockchain solution" .
+<https://w3id.org/IIoT/Distributed_authentication> rdf:type owl:NamedIndividual ;
+                                                   rdfs:comment "Distributed_authentication (Individual): a Blockchain solution" .
 
 
 ###  https://w3id.org/IIoT/#Access_control
