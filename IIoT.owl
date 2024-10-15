@@ -50,7 +50,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal xml:lang="en">2024-09-11</Literal>
+        <Literal xml:lang="en">2024-10-15</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
@@ -62,11 +62,11 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="preferredNamespacePrefix"/>
-        <Literal xml:lang="en">iiot</Literal>
+        <Literal xml:lang="en">IIoT</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="preferredNamespaceUri"/>
-        <IRI>https://w3id.org/iiot-#</IRI>
+        <IRI>https://w3id.org/IIoT</IRI>
     </Annotation>
     <Declaration>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
