@@ -12,9 +12,16 @@
 			:
 		</dt><dd>Version 1.1</dd></dl><dl><dt>Authors
 						:
-					</dt><dd><a href="https://orcid.org/0000-0001-6788-630X">https://orcid.org/0000-0001-6788-630X</a></dd><dd><a href="https://orcid.org/0000-0003-3562-0528">https://orcid.org/0000-0003-3562-0528</a></dd><dt>Contributors
+					</dt>
+			<dd><a href="https://orcid.org/0000-0001-6788-630X">Liviana Tudor</a> &nbsp;
+<a href="https://orcid.org/0000-0003-3562-0528">Lecia Barker</a></dd><dt>Contributors
 						:
-					</dt><dd><a href="https://orcid.org/0000-0002-0814-2615">https://orcid.org/0000-0002-0814-2615</a></dd><dd><a href="https://orcid.org/0000-0003-0702-6134">https://orcid.org/0000-0003-0702-6134</a></dd><dd><a href="https://orcid.org/0000-0003-1562-6922">https://orcid.org/0000-0003-1562-6922</a></dd><dd><a href="https://orcid.org/0000-0003-2392-7821">https://orcid.org/0000-0003-2392-7821</a></dd></dl><dl><dt>Other visualisation
+					</dt>
+			<dd><a href="https://orcid.org/0000-0003-1562-6922">Ghislain Atemezing</a> &nbsp;
+<a href="https://scholar.google.com/citations?user=SpVRxaYAAAAJ&hl=en">Mohammad Q. Azhar</a> &nbsp;
+<a href="https://orcid.org/0000-0003-2392-7821">Jorge Leoncio Guerra Guerra</a> &nbsp;
+<a href="https://www.colorado.edu/cmdi/2021/05/03/class-2021-clark-mousaw">Clark D. Mousaw</a></dd>
+		</dl><dl><dt>Other visualisation
 						:
 					</dt><dd><a href="http://150.146.207.114/lode/source?url=https://w3id.org/IIoT">Ontology source</a>
 						-
