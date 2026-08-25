@@ -2,7 +2,7 @@
 
 <!-- OWL documentation: 
 
- http://150.146.207.114/lode/extract?url=https%3A%2F%2Fw3id.org%2FIIoT&owlapi=true&lang=en -->
+http://150.146.207.114/lode/extract?url=https%3A%2F%2Fw3id.org%2FIIoT&owlapi=true&lang=en  -->
 
 
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
@@ -25,7 +25,10 @@
 						:
 					</dt><dd><a href="http://150.146.207.114/lode/source?url=https://w3id.org/IIoT">Ontology source</a>
 						-
-						<a href="https://service.tib.eu/webvowl/#iri=https://w3id.org/IIoT">WebVowl</a></dd></dl></div><hr><div id="toc"><h2>Table of Content</h2><ol><li><a href="http://150.146.207.114/lode/extract?url=https%3A%2F%2Fw3id.org%2FIIoT&amp;owlapi=true&amp;lang=en#classes">Classes</a></li><li><a href="http://150.146.207.114/lode/extract?url=https%3A%2F%2Fw3id.org%2FIIoT&amp;owlapi=true&amp;lang=en#objectproperties">Object Properties</a></li><li><a href="http://150.146.207.114/lode/extract?url=https%3A%2F%2Fw3id.org%2FIIoT&amp;owlapi=true&amp;lang=en#dataproperties">Data Properties</a></li><li><a href="http://150.146.207.114/lode/extract?url=https%3A%2F%2Fw3id.org%2FIIoT&amp;owlapi=true&amp;lang=en#namedindividuals">Named Individuals</a></li><li><a href="http://150.146.207.114/lode/extract?url=https%3A%2F%2Fw3id.org%2FIIoT&amp;owlapi=true&amp;lang=en#annotationproperties">Annotation Properties</a></li><li><a href="http://150.146.207.114/lode/extract?url=https%3A%2F%2Fw3id.org%2FIIoT&amp;owlapi=true&amp;lang=en#namespacedeclarations">Namespace Declarations</a></li></ol></div><div id="classes">
+						<a href="https://service.tib.eu/webvowl/#iri=https://w3id.org/IIoT">WebVowl</a></dd></dl></div><hr><div id="toc"><h2>Table of Content</h2>
+							<ol>
+								<li><a href="http://150.146.207.114/lode/extract?url=https%3A%2F%2Fw3id.org%2FIIoT&amp;owlapi=true&amp;lang=en#classes">Classes</a></li>
+								<li><a href="http://150.146.207.114/lode/extract?url=https%3A%2F%2Fw3id.org%2FIIoT&amp;owlapi=true&amp;lang=en#objectproperties">Object Properties</a></li><li><a href="http://150.146.207.114/lode/extract?url=https%3A%2F%2Fw3id.org%2FIIoT&amp;owlapi=true&amp;lang=en#dataproperties">Data Properties</a></li><li><a href="http://150.146.207.114/lode/extract?url=https%3A%2F%2Fw3id.org%2FIIoT&amp;owlapi=true&amp;lang=en#namedindividuals">Named Individuals</a></li><li><a href="http://150.146.207.114/lode/extract?url=https%3A%2F%2Fw3id.org%2FIIoT&amp;owlapi=true&amp;lang=en#annotationproperties">Annotation Properties</a></li><li><a href="http://150.146.207.114/lode/extract?url=https%3A%2F%2Fw3id.org%2FIIoT&amp;owlapi=true&amp;lang=en#namespacedeclarations">Namespace Declarations</a></li></ol></div><div id="classes">
 							<h2>Classes</h2>
 							<ul class="hlist">
 								<a href="http://150.146.207.114/lode/extract?url=https%3A%2F%2Fw3id.org%2FIIoT&amp;owlapi=true&amp;lang=en#d4e1154" title="https://ontoit.github.io/IIoT/Network/AI_Analytics"><span>a i analytics</span></a>
